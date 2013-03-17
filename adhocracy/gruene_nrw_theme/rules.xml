@@ -1,0 +1,212 @@
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <theme href="theme.html" />
+
+  <!--do not theme ajax requests-->
+  <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_notheme.xml" />
+
+  <rules if-content="/html/body/div[@id='main']">
+
+    <!-- Head: meta -->
+    <drop theme="/html/head/meta" if-content="/html/head/meta"/>
+    <prepend theme="/html/head" content="/html/head/meta" />
+    <!-- Head: title -->
+    <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_header.xml" />
+    <!-- Head: base tag -->
+    <replace theme="/html/head/base" content="/html/head/base" />
+    <!-- Head: styles and scripts-->
+    <drop theme="/html/head/link[not(contains(@href, 'style_custom.css')) and contains(@rel, 'stylesheet')]" if-content="/html/head/link"/>
+    <before theme="/html/head/link[1]" content="/html/head/link[contains(@rel, 'stylesheet')]" />
+    <drop theme="/html/head/script" if-content="/html/head/script"/>
+    <append theme="/html/head" content="/html/head/script" />
+    <append theme="/html/head" content="/html/head/style" />
+    <!--Conditional comments-->
+    <append theme="/html/head">
+      <xsl:for-each select="/html/head/comment()">
+        <xsl:copy />
+      </xsl:for-each>
+    </append>
+
+    <!--Fix wordpress links -->
+    <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
+    <replace content="//a[@class='staticlink_imprint']/attribute::href" ><xsl:attribute name="href">/_pages/about/impressum</xsl:attribute></replace>
+
+    <!--Body-->
+    <replace theme="/html/body" content="/html/body"/>
+
+    <!--Navigation - about menu-->
+    <replace css:content="li#nav_about">
+      <li>
+       <div id="about_menu">
+        <ul>
+          <li>
+            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
+            <ul class="children">
+              <li class="page_item page-item-1316">
+                <a href="/_pages/about/uber-adhocracy" title="Über Adhocracy.de">Über Adhocracy.de</a>
+              </li>
+              <li class="page_item page-item-1318">
+                <a href="/_pages/about/projekte" title="Projekte">Projekte</a>
+              </li>
+              <li class="page_item page-item-1322">
+                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
+              </li>
+              <li class="page_item page-item-1324">
+                <a href="/_pages/about/support" title="Support">Support</a>
+              </li>
+              <li class="page_item page-item-1326">
+                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
+              </li>
+              <li class="page_item page-item-1326">
+                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+       </div>
+       </li>
+    </replace>
+    <!--TODO: This is not DRY joka-->
+    <rules if-path="/_pages/about">
+     <replace css:content="li#nav_about">
+      <li>
+       <div id="about_menu">
+        <ul>
+          <li class="current">
+            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
+            <ul class="children">
+              <li class="page_item page-item-1316">
+                <a href="/_pages/about/uber-adhocracy" title="Über uns">Über Adhocracy.de</a>
+              </li>
+              <li class="page_item page-item-1318">
+                <a href="/_pages/about/projekte" title="Projekte">Projekte</a>
+              </li>
+              <li class="page_item page-item-1322">
+                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
+              </li>
+              <li class="page_item page-item-1324">
+                <a href="/_pages/about/support" title="Support">Support</a>
+              </li>
+              <li class="page_item page-item-1326">
+                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
+              </li>
+              <li class="page_item page-item-1326">
+                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+       </div>
+      </li>
+     </replace>
+    </rules>
+
+    <!--Navigation - engagieren-->
+    <replace css:content="li#nav_dummy">
+      <li>
+        <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
+        <ul class="children">
+            <li class="page_item page-item-1333">
+              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
+            </li>
+            <li class="page_item page-item-1335">
+              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
+            </li>
+         </ul>
+      </li>
+    </replace>
+    <rules if-path="/_pages/engagieren">
+     <replace css:content="li#nav_dummy">
+        <li class="current">
+          <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
+          <ul class="children">
+            <li class="page_item page-item-1333">
+              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
+            </li>
+            <li class="page_item page-item-1335">
+              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
+            </li>
+          </ul>
+        </li>
+     </replace>
+     <replace content="//li[@id='nav_help']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+     <replace content="//li[@id='nav_home']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+     <replace content="//li[@id='nav_instances']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+    </rules>
+
+    <!--Navigation - help-->
+    <replace css:content="li#nav_help">
+      <li class="" id="nav_help">
+        <a href="/_pages/help" title="">Hilfe</a>
+        <ul class="children">
+          <li class="page_item page-item-1333">
+            <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
+          </li>
+          <li class="page_item page-item-1335">
+            <a href="/_pages/help/faq" title="FAQs">FAQs</a>
+          </li>
+          <li class="page_item page-item-1337">
+            <a href="/_pages/help/support" title="Support">Support</a>
+          </li>
+        </ul>
+      </li>
+    </replace>
+    <rules if-path="/_pages/help">
+     <replace css:content="li#nav_help">
+        <li class="current" id="nav_help">
+          <a href="/_pages/help" title="">Hilfe</a>
+          <ul class="children">
+            <li class="page_item page-item-1333">
+              <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
+            </li>
+            <li class="page_item page-item-1335">
+              <a href="/_pages/help/faq" title="FAQs">FAQs</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/help/support" title="Support">Support</a>
+            </li>
+          </ul>
+        </li>
+     </replace>
+     <replace content="//li[@id='nav_home']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+     <replace content="//li[@id='nav_instances']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+    </rules>
+
+    <!--Content body and sidebar: startpage with merged wordpress-->
+    <rules if-content="//div[@id='content-startpage']">
+      <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_startpage.xml" />
+      <!--Workaround to handle bad wordpress html-->
+      <after css:theme-children="div#mainbar-dummy" >
+        <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
+      </after>
+    </rules>
+
+    <!--Content body and sidebar: aboutpage with merged wordpress-->
+    <rules if-path="/_pages/mehr-erfahren">
+      <replace content="//div[@id='main']/attribute::class" ><xsl:attribute name="class">with_wordpress_tabs</xsl:attribute></replace>
+      <drop css:content="#col1" attributes="id" />
+      <drop css:content="#col3" />
+    </rules>
+
+    <!--Content body and sidebar: wordpress pages (/_pages)-->
+    <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_pages.xml" />
+    <xi:include href="rules_wordpress_javascript.xml" />
+
+  </rules>
+</rules>

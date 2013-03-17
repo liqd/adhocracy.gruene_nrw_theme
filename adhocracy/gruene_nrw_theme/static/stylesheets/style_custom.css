@@ -1,0 +1,189 @@
+/*****************************************************
+*  style_custom.css
+*
+*  Custom theme css to override the adhocracy css
+*
+*  - Main navigation
+*  - Tabs onboarding aboutpage
+*
+******************************************************/
+
+
+/*Main navigation*/
+
+#nav li {
+  padding-top: 7px; /*make drop down menus work*/
+}
+body.logged_in #nav li,
+body.logged_in #nav li a {
+  height: 24px;
+}
+
+
+/*Wordpress pages sidebar*/
+
+#main .widget-area .shailan_SubpagesWidget,
+#main .widget-container ul,
+#main ul.subpages li,
+#main .widget-container {
+  list-style: none;
+  background: none;
+}
+#col3 #secondary {
+  padding-top: 20px;
+}
+
+
+/*Tabs onboarding aboutpage*/
+
+#main .ui-widget {
+  font-family: Arial,sans-serif;
+}
+#main .ui-widget input,
+#main .ui-widget button {
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+}
+/* TODO: This could be much shorter [joka] */
+#main .ui-widget p,
+#main .ui-widget h1,
+#main .ui-widget h2,
+#main .ui-widget h3 {
+  margin-left: 23px;
+  margin-right: 23px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65%;
+}
+#main .ui-widget .register {
+  margin-left: 13px;
+}
+#main .ui-widget img {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+#main .ui-widget h1 {
+  margin: 0 23px 27px 23px;
+  padding: 27px 0 0 0;
+  border-bottom: 1px dotted #CCC;
+}
+#tabs-1 {
+  min-height: 714px;
+}
+#tab_background_dummy {
+  /*This is only here to show some white background during the tab fading out effect*/
+  background-color:#fff;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  width: 1004px;
+  height: 700px;
+}
+#tabs-1 {
+  /*This is only here to show some white background during the tab fading out effect*/
+  z-index: 2;
+}
+
+#main .ui-widget-content,
+#main.with_wordpress_tabs .page_wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color:transparent;
+  min-height: 750px;
+  position:relative;
+}
+#main.with_wordpress_tabs #col1_content {
+  padding-left: 0;
+  padding-right: 0;
+  /*10px 0 23px;,c */
+}
+#main .ui-widget-header {
+  border:none;
+  background-color: transparent;
+  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
+  padding-top: 14px;
+}
+#tabs-1 > div,
+#tabs-1 h1,
+#main .ui-tabs > div,
+#main .ui-tabs h1 {
+  background-color: #fff;
+}
+#main .ui-tabs,
+#main .ui-tabs .ui-tabs-panel {
+  border:none;
+  padding:0;
+}
+#main .ui-tabs-nav {
+  border:none;
+  clear: none;
+  height: 36px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  margin: 0px;
+}
+#main .ui-tabs-nav li {
+  height: 36px;
+  line-height: 36px;
+  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -60px;
+}
+#main .ui-tabs-nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 19px;
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+}
+#main .ui-tabs-nav li.ui-state-active a {
+  color: #2D3441;
+}
+#main .ui-tabs-nav li.ui-state-active {
+  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -10px;
+}
+#main .ui-tabs-nav li:hover a {
+  color: #fff;
+}
+#main .ui-tabs-nav li:focus a {
+  outline: none;
+}
+#main .ui-tabs-nav li:hover {
+  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -111px;
+}
+#main .ui-widget-header,
+#main .ui-tabs-nav li {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+}
+
+#main .put-nav {
+  display:none;
+}
+label.armhint {
+    display: none;
+}
+
+#main.with_wordpress_tabs {
+  background-image: url('/images/tabs_bg_large.png');
+  background-repeat: no-repeat;
+  background-position: 50% -47px;
+  margin: 0 0 60px;
+  padding-top: 30px;
+}
