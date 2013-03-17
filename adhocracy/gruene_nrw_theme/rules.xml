@@ -41,66 +41,17 @@
     <!--Navigation - about menu-->
     <replace css:content="li#nav_about">
       <li>
-       <div id="about_menu">
-        <ul>
-          <li>
-            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
-            <ul class="children">
-              <li class="page_item page-item-1316">
-                <a href="/_pages/about/uber-adhocracy" title="Über Adhocracy.de">Über Adhocracy.de</a>
-              </li>
-              <li class="page_item page-item-1318">
-                <a href="/_pages/about/projekte" title="Projekte">Projekte</a>
-              </li>
-              <li class="page_item page-item-1322">
-                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
-              </li>
-              <li class="page_item page-item-1324">
-                <a href="/_pages/about/support" title="Support">Support</a>
-              </li>
-              <li class="page_item page-item-1326">
-                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
-              </li>
-              <li class="page_item page-item-1326">
-                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-       </div>
+        <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
+        <xsl:variable name="url_menupage" select="concat('http://', $wordpress_backend, '/')"/>
+        <xsl:copy-of select="document($url_menupage)//div[@role='navigation']/div/ul/li[@class='page_item page-item-1057']/ul"/>
        </li>
     </replace>
-    <!--TODO: This is not DRY joka-->
     <rules if-path="/_pages/about">
      <replace css:content="li#nav_about">
       <li>
-       <div id="about_menu">
-        <ul>
-          <li class="current">
-            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
-            <ul class="children">
-              <li class="page_item page-item-1316">
-                <a href="/_pages/about/uber-adhocracy" title="Über uns">Über Adhocracy.de</a>
-              </li>
-              <li class="page_item page-item-1318">
-                <a href="/_pages/about/projekte" title="Projekte">Projekte</a>
-              </li>
-              <li class="page_item page-item-1322">
-                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
-              </li>
-              <li class="page_item page-item-1324">
-                <a href="/_pages/about/support" title="Support">Support</a>
-              </li>
-              <li class="page_item page-item-1326">
-                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
-              </li>
-              <li class="page_item page-item-1326">
-                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-       </div>
+        <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
+        <xsl:variable name="url_menupage" select="concat('http://', $wordpress_backend, '/')"/>
+        <xsl:copy-of select="document($url_menupage)//div[@role='navigation']/div/ul/li[@class='page_item page-item-1057']/ul"/>
       </li>
      </replace>
     </rules>
@@ -109,40 +60,16 @@
     <replace css:content="li#nav_dummy">
       <li>
         <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
-        <ul class="children">
-            <li class="page_item page-item-1333">
-              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
-            </li>
-            <li class="page_item page-item-1335">
-              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
-            </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
-            </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
-            </li>
-         </ul>
+        <xsl:variable name="url_menupage" select="concat('http://', $wordpress_backend, '/')"/>
+        <xsl:copy-of select="document($url_menupage)//div[@role='navigation']/div/ul/li[@class='page_item page-item-1329']/ul"/>
       </li>
     </replace>
     <rules if-path="/_pages/engagieren">
      <replace css:content="li#nav_dummy">
         <li class="current">
           <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
-          <ul class="children">
-            <li class="page_item page-item-1333">
-              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
-            </li>
-            <li class="page_item page-item-1335">
-              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
-            </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
-            </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
-            </li>
-          </ul>
+          <xsl:variable name="url_menupage" select="concat('http://', $wordpress_backend, '/')"/>
+          <xsl:copy-of select="document($url_menupage)//div[@role='navigation']/div/ul/li[@class='page_item page-item-1329']/ul"/>
         </li>
      </replace>
      <replace content="//li[@id='nav_help']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
@@ -154,34 +81,16 @@
     <replace css:content="li#nav_help">
       <li class="" id="nav_help">
         <a href="/_pages/help" title="">Hilfe</a>
-        <ul class="children">
-          <li class="page_item page-item-1333">
-            <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
-          </li>
-          <li class="page_item page-item-1335">
-            <a href="/_pages/help/faq" title="FAQs">FAQs</a>
-          </li>
-          <li class="page_item page-item-1337">
-            <a href="/_pages/help/support" title="Support">Support</a>
-          </li>
-        </ul>
+        <xsl:variable name="url_menupage" select="concat('http://', $wordpress_backend, '/')"/>
+        <xsl:copy-of select="document($url_menupage)//div[@role='navigation']/div/ul/li[@class='page_item page-item-510']/ul"/>
       </li>
     </replace>
     <rules if-path="/_pages/help">
      <replace css:content="li#nav_help">
         <li class="current" id="nav_help">
           <a href="/_pages/help" title="">Hilfe</a>
-          <ul class="children">
-            <li class="page_item page-item-1333">
-              <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
-            </li>
-            <li class="page_item page-item-1335">
-              <a href="/_pages/help/faq" title="FAQs">FAQs</a>
-            </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/help/support" title="Support">Support</a>
-            </li>
-          </ul>
+          <xsl:variable name="url_menupage" select="concat('http://', $wordpress_backend, '/')"/>
+          <xsl:copy-of select="document($url_menupage)//div[@role='navigation']/div/ul/li[@class='page_item page-item-510']/ul"/>
         </li>
      </replace>
      <replace content="//li[@id='nav_home']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
