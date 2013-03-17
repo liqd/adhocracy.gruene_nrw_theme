@@ -38,6 +38,12 @@
     <!--Body-->
     <replace theme="/html/body" content="/html/body"/>
 
+    <!--Logo-->
+      <!-- if body.compact -->
+      <replace content="//a[@id='logo']/img/attribute::src" if-content="//body[contains(@class, 'logged_in')]"><xsl:attribute name="src">/static_theme/static/images/logo_small.png</xsl:attribute></replace>
+      <!-- if not body.compact -->
+      <replace content="//a[@id='logo']/img/attribute::src" if-content="not(//body[contains(@class, 'logged_in')])"><xsl:attribute name="src">/static_theme/static/images/logo_big.png</xsl:attribute></replace>
+
     <!--Navigation - about menu-->
     <replace css:content="li#nav_about">
       <li>

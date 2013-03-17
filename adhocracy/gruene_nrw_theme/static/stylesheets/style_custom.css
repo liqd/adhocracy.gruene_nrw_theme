@@ -14,6 +14,24 @@
 #nav li {
   padding-top: 7px; /*make drop down menus work*/
 }
+#nav ul.children li {
+  line-height: inherit;
+  height: initial;
+}
+#nav ul.children ul.children {
+  position: relative;
+  background-image: none;
+  margin: 0;
+  min-width: 0;
+  padding: 5px 0 5px 0;
+  right: 0;
+}
+
+#nav ul ul ul.children {
+  display: none;
+  left: 100%;
+}
+
 body.logged_in #nav li,
 body.logged_in #nav li a {
   height: 24px;
@@ -186,4 +204,280 @@ label.armhint {
   background-position: 50% -47px;
   margin: 0 0 60px;
   padding-top: 30px;
+}
+
+
+
+/* @override 
+	https://gruene-nrw.staging.adhocracy.cc/stylesheets/site.css */
+
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/museosans_500-webfont.eot');
+    src: url('../fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans_500-webfont.woff') format('woff'),
+         url('../fonts/museosans_500-webfont.ttf') format('truetype'),
+         url('../fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('../fonts/DroidSans-webfont.eot');
+    src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSans-webfont.woff') format('woff'),
+         url('../fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('../fonts/DroidSans-Bold-webfont.eot');
+    src: url('../fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {}
+
+h1,h2,h3,h4,h5,h6 {margin:0 0 1em 0;font-size: 1em;font-family: 'DroidSansBold','MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;font-weight: normal;color: #000;}  
+h1 {font-size:2.2em; margin: 0 0 1em;padding: 0;}
+h2 {font-size:2em;} 
+h3 {font-size:1.7em;}
+h4 {font-size:1.5em;}
+h5 {font-size:1.3em;}
+
+
+a {color:#035b26;text-decoration: none;}
+a:visited {color:#1e770d;}
+a:hover {color:#023b19;text-decoration: underline;}
+
+body,code {font-family: 'MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;color: #222;}
+
+
+#header {background: url(http://www.gruene-nrw.de/fileadmin/lib/themes/jahnstrasse/img/body_bg.png) #1a781a;border-bottom: 1px solid #0a350a;}
+
+	#header1 {	/*Inner elements should not cover inner shadows*/	/*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/	background-image: -moz-linear-gradient(top, #024f20, #036028);	background-image: -webkit-gradient(linear, center top, center bottom, from(#024f20), to(#036028));	background-image: -o-linear-gradient(top, #024f20, #036028);	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#024f20', endColorstr='#036028');	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/	/*Element must have a height (not auto)*/	/*All filters must be placed together*/	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#024f20', endColorstr='#036028')";/*Element must have a height (not auto)*/	/*All filters must be placed together*/	background-image: linear-gradient(top, #024f20, #036028);}
+	
+	
+	#nav {font-weight: normal;}
+		#nav li, #nav li.current, #nav li:hover {height: auto;padding: 0;padding-top: 0!important;margin: 0;background: transparent;}
+		#nav li a {text-shadow:1px 1px 2px #012b12; height: auto;padding: 0.5em 1em;margin: 0;border-radius: 0.7em;}
+		.logged_in #nav li a {border-radius: 0;}
+		#nav li.current a {color: #96DC3C;}
+		#nav li.current a, #nav li:hover a, #nav ul.children {border-bottom:1px solid #1e770d;box-shadow: inset 0px 1px 0px 0px #023b19;text-shadow:1px 1px 2px #012b12;/*Inner elements should not cover inner shadows*/	/*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/	background-image: -moz-linear-gradient(top, #024f20, #036028);	background-image: -webkit-gradient(linear, center top, center bottom, from(#024f20), to(#036028));	background-image: -o-linear-gradient(top, #024f20, #036028);	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#024f20', endColorstr='#036028');	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/	/*Element must have a height (not auto)*/	/*All filters must be placed together*/	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#024f20', endColorstr='#036028')";/*Element must have a height (not auto)*/	/*All filters must be placed together*/	background-image: linear-gradient(top, #024f20, #036028);}
+			#nav ul.children {box-shadow: inset 0 0 0 0 transparent;border: 0;}
+				#nav ul.children li {background: transparent;padding: 2px 0 0 0;margin: 0;border-bottom: 1px solid #1e770d;box-shadow: inset 0 0 0 0 transparent;			}
+				#nav ul.children li a {padding: 0;margin: 0;background: transparent;font-weight: normal;border-radius: 0;border-bottom: 1px solid #023b19;box-shadow: inset 0 0 0 0 transparent;				}
+					#nav ul.children li a:hover {color: #96DC3C;}
+					#nav ul.children .children, #nav ul.children .children li, #nav ul.children .children a {display: none!important;position: absolute;top: -99999px;height: 0px;overflow: hidden;	}
+					#nav #user_menu:hover ul.children {margin-left: -250px;					}
+					#nav #user_menu a.show_me {height: auto;padding: 0.5em 1.5em 0.5em 1em!important;margin: 0;line-height: 1em;background-position: right -344px;
+					}
+						#nav #user_menu {margin-top: -6px;}
+						#nav #user_menu li{}
+					
+					
+		#nav #nav_login a {color: #035825;border-bottom: 1px solid #f8e529;box-shadow: inset 0px 1px 0px 0px #8d8408;text-shadow: 1px 1px 0 #efdf74;box-shadow: inset 0 0 0 0 transparent;}
+			#nav #nav_login a {background: #ffed00; /* Old browsers */background: -moz-linear-gradient(top, #ffed00 0%, #e2c003 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffed00), color-stop(100%,#e2c003)); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* Opera11.10+ */background: -ms-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* IE10+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed00', endColorstr='#e2c003',GradientType=0 ); /* IE6-9 */background: linear-gradient(top, #ffed00 0%,#e2c003 100%); /* W3C */}
+		
+		
+		
+	
+	#flash_message {border-bottom: 1px solid #0a350a;}
+	
+		#flash_message {background: #ffed00; /* Old browsers */background: -moz-linear-gradient(top, #ffed00 0%, #e2c003 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffed00), color-stop(100%,#e2c003)); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* Opera11.10+ */background: -ms-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* IE10+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed00', endColorstr='#e2c003',GradientType=0 ); /* IE6-9 */background: linear-gradient(top, #ffed00 0%,#e2c003 100%); /* W3C */}
+		
+		#flash_message p.register_msg {margin: 5px 0 0 0;}
+	
+	
+	#subheader {background: transparent;max-height: 120px;}
+		#subheader .page_wrapper {}
+		#subheader #logo_row {height: auto;margin-bottom: 20px;}
+			#subheader #organisation_logo {display: block;height: auto;margin: 0;padding: 0 0 1em 0;padding-top: 5px;float: none;}
+			#subheader #logo_row h2 {font-size: 3em;color: #035b26;}
+			
+			#subheader #subnav {padding: 0 0 0 5px;border:1px solid #023b19; border-right: 0;}
+				#subheader #subnav, #subheader #searchbox {text-shadow:1px 1px 2px #012b12;height: 42px;
+					background: #429f31;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117');		/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117')";		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		background-image: -moz-linear-gradient(top, #429f31, #177117);		background-image: -ms-linear-gradient(top, #429f31, #177117);		background-image: -o-linear-gradient(top, #429f31, #177117);		background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#177117));		background-image: -webkit-linear-gradient(top, #429f31, #177117);		background-image: linear-gradient(top, #429f31, #177117);		/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/}
+				#subnav li.current {background: transparent;}
+					#subnav li.current a {color: #035825;text-shadow: 1px 1px 0 #efdf74;border: 0;}
+						#subnav li.current a {background: #ffed00; /* Old browsers */background: -moz-linear-gradient(top, #ffed00 0%, #e2c003 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffed00), color-stop(100%,#e2c003)); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* Opera11.10+ */background: -ms-linear-gradient(top, #ffed00 0%,#e2c003 100%); /* IE10+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed00', endColorstr='#e2c003',GradientType=0 ); /* IE6-9 */background: linear-gradient(top, #ffed00 0%,#e2c003 100%); /* W3C */}
+				#subnav li {background: transparent;border-right: 1px solid #023b19;padding: 0;height: 100%;margin: 0 0 0 -5px;}
+					#subnav li a {font-weight: normal;color: #fff;height: 100%;border-right: 1px solid #54b845;margin: 0;}
+					#subnav li a:hover {text-decoration: underline;}
+				#subnav li:hover {text-decoration: underline;background: transparent;}
+				
+			#subheader #searchbox {padding: 0;border:1px solid #023b19; border-left: 0;padding: 2px 2px 0 0;height: 40px;
+			}
+				#subheader #searchform {border: 1px solid #0a350a;background: #fff;box-shadow: 0 1px 0 #51bc3e ,0 0 10px #777 inset;border-radius: 7px;padding: 0;}
+				#subheader #searchform #s {border: 0;background: transparent;color: #333;padding: 7px 0 0 15px;height: auto;}
+				#subheader #searchform #s:focus {
+					outline: 0;
+				}
+				#subheader #searchform #searchsubmit {border: 1px solid #166608;background: url(http://www.gruene-nrw.de/fileadmin/lib/themes/jahnstrasse/img/suche_submit.png) center center no-repeat #5ebd4c;border-radius: 5px;box-shadow: 0 1px 0 #7dd66c inset;color: #035825;text-indent: -9999px;display:inline-block;width:45px;height: 32px;margin: 2px;		   }
+					#subheader #searchform #searchsubmit:hover {background-color: #429f31;box-shadow: 0 -1px 0 #28711b inset;}
+	
+	
+	
+	#main{}
+		#main  .page_wrapper {}
+		
+		#col1_content {padding-left: 0;}
+		#col3_content {padding: 0 0 0 3em;}
+	#main #col3 ul.subpages, #main #col3 .sidebar_box, #col3 summary {border-radius:7px;padding:1em;border:1px solid #023b19;box-shadow:0 1px 0 #95e087 inset;margin-top:-2px;color:  #023b19;text-shadow: 1px 1px 1px #95e087;	}
+		#main #col3 ul.subpages, #main #col3 .sidebar_box, #col3 summary {background: #65c154; /* Old browsers */background: -moz-linear-gradient(top, #65c154 0%, #429f31 100%); /* FF3.6+ */background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#65c154), color-stop(100%,#429f31)); /* Chrome,Safari4+ */background: -webkit-linear-gradient(top, #65c154 0%,#429f31 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, #65c154 0%,#429f31 100%); /* Opera11.10+ */background: -ms-linear-gradient(top, #65c154 0%,#429f31 100%); /* IE10+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed00', endColorstr='#e2c003',GradientType=0 ); /* IE6-9 */background: linear-gradient(top, #65c154 0%,#429f31 100%); /* W3C */}
+		
+		#main #col3 .sidebar_box summary {border: 0;background: transparent;padding: 1em 0 0 0;border-radius: 0;box-shadow: 0 0 0 transparent;
+		}
+		#main #col3 .sidebar_box .tile {border-bottom:1px solid #7ad769;background: transparent;box-shadow: 0 -1px 0 0 #2b6e1e inset;
+		}
+		
+		#main #col3 ul.subpages a {color:  #023b19;text-shadow: 1px 1px 1px #95e087;margin-bottom: 0.5em;display: block;}
+		#main #col3 ul.subpages .current_page_item a {color: #fff;text-shadow:1px 1px 1px #012b12;}
+		
+		#main #col3 .sidebar_box, #main #col3 .sidebar_box .meta {color:  #023b19;	}
+			#main #col3 .sidebar_box a, #col3 summary a {color: #fff;text-shadow:1px 1px 1px #012b12;}
+			#main #col3 .sidebar_box h3 {color:  #023b19;border: 0;background: transparent;	margin:0;}
+			#main #col3 .sidebar_box h6, #col3 summary h6 {color:  #023b19;font-size: 1.1em;}
+			#main #col3 .sidebar_box .more_link,.create_proposal_link {text-transform: none;font-variant: normal;}
+			
+			#col3 code {background: transparent;border: 0;font-size: 1em;color:#ffed00;}
+			
+			#col3 h3 {background: transparent;margin: 0;}
+			
+			
+		
+		
+		
+		
+		
+		a.more_uppercase, .register a.link_more_info, .register a.link_more_info:hover, a.more {text-transform: none;font-weight: normal;color:#035b26;}
+		
+		
+		a.button, #flash_message a.button, .submit input, a.participate, .savebox button, #create_selection input {background-position: 0 0!important;display: inline-block;padding: 0.2em 1em;	border: 1px solid #035b26;text-shadow:1px 1px 2px #012b12;color: #fff;box-shadow: 0 1px 0 #54b845 inset;border-radius:7px;font-weight: normal;}
+			 a.button, #flash_message a.button, .submit input, a.participate, .savebox button, #create_selection input   {background: #429f31;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117');		/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117')";		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		background-image: -moz-linear-gradient(top, #429f31, #177117);		background-image: -ms-linear-gradient(top, #429f31, #177117);		background-image: -o-linear-gradient(top, #429f31, #177117);		background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#177117));		background-image: -webkit-linear-gradient(top, #429f31, #177117);		background-image: linear-gradient(top, #429f31, #177117);		/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/}
+			 a.cta:hover, #flash_message a.button:hover, .submit input:hover, a.participate:hover, .savebox button:hover, #create_selection input:hover {background: #5ebd4c;border-color: #166608;box-shadow: 0 1px 0 0 #7dd66c inset;color: #013717;text-shadow: 1px 1px 0 #63c251;			}
+			  a.button:hover, #flash_message a.button:hover, .submit input:hover, a.participate:hover, .savebox button:hover, #create_selection input:hover {filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#5ebd4c');/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*//*Element must have a height (not auto)*//*All filters must be placed together*/-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#5ebd4c')";/*Element must have a height (not auto)*//*All filters must be placed together*/background-image: -moz-linear-gradient(top, #429f31, #5ebd4c);background-image: -ms-linear-gradient(top, #429f31, #5ebd4c);background-image: -o-linear-gradient(top, #429f31, #5ebd4c);background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#5ebd4c));background-image: -webkit-linear-gradient(top, #429f31, #5ebd4c);background-image: linear-gradient(top, #429f31, #5ebd4c);					/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/}
+		#flash_message a.button {padding: 0.5em 1em;margin-top: -7px;}
+	 #col1 section h2 {
+	 	margin: 0;padding: 0.5em;}
+		a.show_comments:hover, a.new_comment:hover,  #col3 .tag_link a:hover, #col3 .facet a:hover {background: #5ebd4c;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#5ebd4c');/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*//*Element must have a height (not auto)*//*All filters must be placed together*/-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#5ebd4c')";/*Element must have a height (not auto)*//*All filters must be placed together*/background-image: -moz-linear-gradient(top, #429f31, #5ebd4c);background-image: -ms-linear-gradient(top, #429f31, #5ebd4c);background-image: -o-linear-gradient(top, #429f31, #5ebd4c);background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#5ebd4c));background-image: -webkit-linear-gradient(top, #429f31, #5ebd4c);background-image: linear-gradient(top, #429f31, #5ebd4c);}
+		 #col3 .tag_link a, #col3 .facet a {display: inline-block;background: #f5f5f5;padding: 0.4em 0.7em;} {padding: 0.5em 1em;color: #fff; }
+		.pager_wrapper div.floatbox,a.button_small, #col3 .tag_link a, #col3 .facet a, .switch_buttons a.button_small.active, #col1 section h2 {border: 1px solid #035b26;text-shadow:1px 1px 2px #012b12;color: #fff;}
+			.pager_wrapper div.floatbox,a.button_small, #col3 .tag_link a, #col3 .facet a,.switch_buttons a.button_small.active, #col1 section h2  {background: #429f31;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117');		/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117')";		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		background-image: -moz-linear-gradient(top, #429f31, #177117);		background-image: -ms-linear-gradient(top, #429f31, #177117);		background-image: -o-linear-gradient(top, #429f31, #177117);		background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#177117));		background-image: -webkit-linear-gradient(top, #429f31, #177117);		background-image: linear-gradient(top, #429f31, #177117);		/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/}
+			.switch_buttons a.button_small {background: #aaa;border: 1px solid #999;}
+			
+			.inactive .switch_buttons a.button_small {background: #eee;border: 1px solid #ccc;text-shadow: 0 0 0;color: #ccc;}
+
+			.pager_wrapper div.floatbox .filter_box {color: #fff;margin: 5px 0 0 0;height: 39px;	}
+			.pager_wrapper div.floatbox .pager_items {margin: 13px 0 0 0;display: inline-block;}
+			
+			/*Listen*/
+			#col1 #instance_table .content_list {	border: 1px solid #035b26;border-top: 0;border-bottom: 0;margin-top: 0;}
+			#instance_table li.content_box {border-bottom: 1px solid #035b26;padding: 1em;	}
+			#instance_table .hr {display: none;}
+				.hr {background: #fff;}
+				li.content_box h3 {font-size: 2em;margin: 0;}
+			#col1 .content_list {	border: 1px solid #035b26;border-bottom: 0;padding: 0;}
+				#col1 .content_list .tile {border-bottom: 1px solid #035b26;padding: 1em;}
+			#new_proposals_table .content_list{margin: 0 0 2em 0;}
+			#pages_table .content_list, #proposals_table .content_list, #users_table .content_list,#entities_table .content_list {margin: -2px 0 2em 0;}
+				#new_proposals_table .content_list .content_box, #pages_table .content_box, #proposals_table .content_list .content_box, #pages_table .content_box, #users_table .content_list .content_box, #entities_table .content_box, #col1 .content_list .content_box  {border-bottom: 1px solid #035b26;padding: 1em;}
+				#col1 .content_list {}
+				#col1 p a.more.view_all {margin: -20px 10px 0 0;
+				}
+				
+				/*Lightbox Mitmachen */
+						ul.tabnav li a {background: transparent;border: 1px solid #035b26; border-bottom: 0;}
+							ul.tabnav li a.active {background: #035b26;color: #fff;}
+							ul.tabnav li a:hover {background: #035b26;color: #fff;}
+						#selection_box {border: 1px solid #035b26;background: transparent;}
+							#selection_box #comments{padding: 0 2em;}
+							#selection_box .content_list{border: 0;}
+							#selection_box .tile {border: 0!;}
+							#selection_box .infobox{background: #eee;padding: 1em;	}
+							#selection_box  {}
+
+				/*Tutorial */
+					.joyride-tip-guide .joyride-next-tip, .joyride-tip-guide .joyride-prev-tip  {padding:0 1em!important; border: 0;box-shadow: 0 0 0 transparent!important;height: auto!important;background: #035b26!important;color: #fff!important;border-radius: 5px!important;		}
+					.joyride-tip-guide .joyride-next-tip:hover, .joyride-tip-guide .joyride-prev-tip:hover {color: #035b26!important;background: #fff!important;border-radius: 5px!important;		}
+
+
+
+			.full_teaser {margin-top: 3em;padding: 0;}
+			
+			
+			#instance_settings {margin-top: -40px;}
+
+			/*Formulare */
+			.form_wrapper {}
+				form legend {font-family: 'DroidSansBold','MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;font-weight: normal;
+					color: #035b26;font-size: 1.3em;border: 0;}
+					form#create_user {margin: 1em 0 0 0;padding: 2em 2em 4em 2em; 	}
+			
+			
+			/*Vorschläge */
+				#socialshareprivacy {margin: 4em 0;}
+				
+				a.follow_paper, a.vote_count, a.button.delegate {font-weight: normal;font-size: 1em;text-shadow: 0 0 0;border: 0;}
+					a.button.delegate {padding-left: 3em;box-shadow: 0 0 0;}
+					a.button.delegate:hover {background: url('/images/sprite_buttons.png') no-repeat -35px -1px;background-position: -35px -52px;text-decoration: none;}
+				
+				#col1 article .meta {margin-bottom: 3em;}
+
+				
+				h3#discussions, h3#proposals, #new_proposals_table h3.section {border: 1px solid #035b26;text-shadow:1px 1px 2px #012b12;color: #fff;padding: 0.5em;margin: 0;}
+					h3#discussions, h3#proposals, #new_proposals_table h3.section {background: #429f31;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117');		/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117')";		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		background-image: -moz-linear-gradient(top, #429f31, #177117);		background-image: -ms-linear-gradient(top, #429f31, #177117);		background-image: -o-linear-gradient(top, #429f31, #177117);		background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#177117));		background-image: -webkit-linear-gradient(top, #429f31, #177117);		background-image: linear-gradient(top, #429f31, #177117);		/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/}
+					
+					
+				#col1 .table .meta .ts{font-weight: normal;color: #000;}
+			
+			
+			/*Kommentare */
+			.comment_wrapper, ul.comments_list, .admin_controls, .top_actions, .vote_wrapper, a.button.delete {margin-bottom: 2em;}
+				ul.comments_list {background: transparent;}
+					ul.comments_list li {padding: 0;margin:0;}
+					ul.comments_list ul {padding: 0;margin: 0 0 0 4em;}
+						ul.comments_list li .comment {border: 1px solid #035b26;margin: 0 0 2em 0;padding: 1em;}
+				.comment h5 {font-size: 1.3em;}
+				.comment h5 .pro {font-size: 0.8em!important;}
+				.comment h5 .con {color: red;font-size: 0.8em!important;}
+				.comment_wrapper {background: transparent;}
+					.comment_wrapper .comment.empty {background: transparent;padding: 0; font-weight: normal; font-style: normal;}
+					.comment_wrapper .comment {background: transparent;padding: 0;}
+						.comment_wrapper .comment .comment_form {padding: 0;background: transparent;}
+						a.button_small:hover {background: #035b26;color: #fff;text-decoration: none;}
+						a.staticlink_formatting {font-size: 0.9em;}
+			
+				
+
+/* Use sprites from theme */
+
+a.icon_link {
+  background-image: url('/static_theme/static/images/sprite.png');
+}
+#slides .pagination li {
+  background: url('/static_theme/static/images/sprite.png') left -1154px no-repeat;
+}
+#slides .pagination li span {
+  background: url('/static_theme/static/images/sprite.png') left -1205px no-repeat;
+}
+#projects_slides #prev_link, #projects_slides #next_link, #projects_slides .prev, #projects_slides .next {
+  background-image: url('/static_theme/static/images/sprite.png');
+}
+.more_link {
+  background: url("/static_theme/static/images/sprite.png") no-repeat left -2px;
+}
+.create_proposal_link {
+  background: url("/static_theme/static/images/sprite.png") no-repeat left 2px;
 }
