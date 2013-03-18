@@ -1,4 +1,3 @@
-
 /*****************************************************
 *  style_custom.css
 *
@@ -297,6 +296,8 @@ body,code {font-family: 'MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, 
 	#main{}
 		#main  .page_wrapper {}
 		
+		#main p, .full_teaser p {line-height: 1.7em;font-size: 1.1em;}
+		
 		#col1_content {padding-left: 0;}
 		#col3_content {padding: 0 0 0 3em;}
 	#main #col3 ul.subpages, #main #col3 .sidebar_box, #col3 summary {border-radius:7px;padding:1em;border:1px solid #023b19;box-shadow:0 1px 0 #95e087 inset;margin-top:-2px;color:  #023b19;text-shadow: 1px 1px 1px #95e087;	display: block;}
@@ -356,8 +357,8 @@ body,code {font-family: 'MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, 
 			/*Listen*/
 			#col1 #instance_table .content_list {	border: 1px solid #035b26;border-top: 0;border-bottom: 0;margin-top: 0;}
 			#instance_table li.content_box {border-bottom: 1px solid #035b26;padding: 1em;	}
-			#instance_table .hr {display: none;}
-				.hr {background: #fff;}
+			#instance_table .hr, table .hr, ul .hr  {display: none;}
+				.hr {background: #035b26;}
 				li.content_box h3 {font-size: 2em;margin: 0;}
 			#col1 .content_list {	border: 1px solid #035b26;border-bottom: 0;padding: 0;}
 				#col1 .content_list .tile, .content_list.without_paging li.infobox, .content_list li.infobox {border-bottom: 1px solid #035b26;padding: 1em;}
