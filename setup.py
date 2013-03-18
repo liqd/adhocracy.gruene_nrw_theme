@@ -14,7 +14,7 @@ setup(name='adhocracy.nrw_gruene_theme',
         "Programming Language :: Python",
         ],
       keywords='',
-      author='Benjamin Jopen'
+      author='Benjamin Jopen',
       author_email='ben@kre8tiv.de',
       url='',
       license='GPL',
