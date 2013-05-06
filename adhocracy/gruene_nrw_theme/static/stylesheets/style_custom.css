@@ -1,3 +1,4 @@
+
 /*****************************************************
 *  style_custom.css
 *
@@ -355,6 +356,10 @@ body,code {font-family: 'MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, 
 				#col3 .facet a {background: transparent;border: 0;padding: 0;text-shadow: 0 0 0;color: #5ebd4c;font-weight: normal;	}
 				#col3 .facet a:hover {color: #035b26;background: transparent;}
 				#col3 .facet h4 .remove {font-size: 0.7em;}
+				
+				.sidebar_box .facet li {border-color: #035b26!important;}
+					.sidebar_box .facet li span {color: #035b26;}
+					
 			
 			.switch_buttons a.button_small {background: #aaa;border: 1px solid #999;}
 			
