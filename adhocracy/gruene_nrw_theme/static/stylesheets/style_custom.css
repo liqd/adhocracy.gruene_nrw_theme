@@ -342,6 +342,14 @@ body,code {font-family: 'MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, 
 		.pager_wrapper div.floatbox,a.button_small, #col3 .tag_link a  .switch_buttons a.button_small.active, #col1 section h2 {border: 1px solid #035b26;text-shadow:1px 1px 2px #012b12;color: #fff;}
 			.pager_wrapper div.floatbox,a.button_small, #col3 .tag_link a, #col3 .facet a,.switch_buttons a.button_small.active, #col1 section h2  {background: #429f31;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117');		/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117')";		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		background-image: -moz-linear-gradient(top, #429f31, #177117);		background-image: -ms-linear-gradient(top, #429f31, #177117);		background-image: -o-linear-gradient(top, #429f31, #177117);		background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#177117));		background-image: -webkit-linear-gradient(top, #429f31, #177117);		background-image: linear-gradient(top, #429f31, #177117);		/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/}
 			
+			
+			.floatbox .sort_group {}
+				.floatbox span.pager_items {padding: 0 0 20px 12px;color: #96ec87;
+				}
+				.floatbox .sort_group a {color: #fff;}
+				.floatbox .sort_group h6 {margin: 0;				}
+				.floatbox .sort_group h6 em{font-style: normal;color: #f5de01;}
+			
 			/*Kategorien */
 				#col3 .facet li {color: #aaa;border-bottom: 1px solid #aaa;padding: 0.7em 0em;font-weight: normal; }
 				#col3 .facet a {background: transparent;border: 0;padding: 0;text-shadow: 0 0 0;color: #5ebd4c;font-weight: normal;	}
