@@ -1,4 +1,3 @@
-
 /*****************************************************
 *  style_custom.css
 *
@@ -339,7 +338,7 @@ body,code {font-family: 'MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, 
 	 #col1 section h2 {
 	 	margin: 0;padding: 0.5em;}
 		a.show_comments:hover, a.new_comment:hover,  #col3 .tag_link a:hover {background: #5ebd4c;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#5ebd4c');/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*//*Element must have a height (not auto)*//*All filters must be placed together*/-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#5ebd4c')";/*Element must have a height (not auto)*//*All filters must be placed together*/background-image: -moz-linear-gradient(top, #429f31, #5ebd4c);background-image: -ms-linear-gradient(top, #429f31, #5ebd4c);background-image: -o-linear-gradient(top, #429f31, #5ebd4c);background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#5ebd4c));background-image: -webkit-linear-gradient(top, #429f31, #5ebd4c);background-image: linear-gradient(top, #429f31, #5ebd4c);}
-		 #col3 .tag_link a {display: inline-block;background: #f5f5f5;padding: 0.4em 0.7em;}
+		 #col3 .tag_link a {display: inline-block;background: #f5f5f5;padding: 0.4em 0.7em; color: #fff; margin: 0 0.1em 0.3em 0;}
 		.pager_wrapper div.floatbox,a.button_small, #col3 .tag_link a  .switch_buttons a.button_small.active, #col1 section h2 {border: 1px solid #035b26;text-shadow:1px 1px 2px #012b12;color: #fff;}
 			.pager_wrapper div.floatbox,a.button_small, #col3 .tag_link a, #col3 .facet a,.switch_buttons a.button_small.active, #col1 section h2  {background: #429f31;filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117');		/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#429f31', endColorstr = '#177117')";		/*Element must have a height (not auto)*/		/*All filters must be placed together*/		background-image: -moz-linear-gradient(top, #429f31, #177117);		background-image: -ms-linear-gradient(top, #429f31, #177117);		background-image: -o-linear-gradient(top, #429f31, #177117);		background-image: -webkit-gradient(linear, center top, center bottom, from(#429f31), to(#177117));		background-image: -webkit-linear-gradient(top, #429f31, #177117);		background-image: linear-gradient(top, #429f31, #177117);		/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/}
 			
