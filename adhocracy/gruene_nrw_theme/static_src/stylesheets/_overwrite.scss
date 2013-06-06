@@ -178,22 +178,22 @@ label.armhint {
 
 @font-face {
     font-family: 'MuseoSans';
-    src: url('../fonts/museosans_500-webfont.eot');
-    src: url('../fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/museosans_500-webfont.woff') format('woff'),
-         url('../fonts/museosans_500-webfont.ttf') format('truetype'),
-         url('../fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
+    src: url('/static_theme/static/fonts/museosans_500-webfont.eot');
+    src: url('/static_theme/static/fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static_theme/static/fonts/museosans_500-webfont.woff') format('woff'),
+         url('/static_theme/static/fonts/museosans_500-webfont.ttf') format('truetype'),
+         url('/static_theme/static/fonts/museosans_500-webfont.svg#MuseoSans500') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DroidSansRegular';
-    src: url('../fonts/DroidSans-webfont.eot');
-    src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSans-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    src: url('/static_theme/static/fonts/DroidSans-webfont.eot');
+    src: url('/static_theme/static/fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static_theme/static/fonts/DroidSans-webfont.woff') format('woff'),
+         url('/static_theme/static/fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('/static_theme/static/fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -201,11 +201,11 @@ label.armhint {
 
 @font-face {
     font-family: 'DroidSansBold';
-    src: url('../fonts/DroidSans-Bold-webfont.eot');
-    src: url('../fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    src: url('/static_theme/static/fonts/DroidSans-Bold-webfont.eot');
+    src: url('/static_theme/static/fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static_theme/static/fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('/static_theme/static/fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('/static_theme/static/fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
     font-weight: normal;
     font-style: normal;
 
