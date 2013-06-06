@@ -467,3 +467,17 @@ a.icon_link {
 .create_proposal_link {
   background: url("/static_theme/static/images/sprite.png") no-repeat left 2px;
 }
+
+
+/* use custom sprite_icons */
+
+.info_box .close_button, .overlay a.close,
+.vote_up span,
+.vote_down span,
+.vote.big .vote_up span,
+.vote.big .vote_down span,
+a.show_comments:after, a.new_comment:after,
+.more_arrow,
+.more_arrow.less {
+    background-image: url('/static_theme/static/images/sprite_icons.png');
+}
