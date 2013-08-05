@@ -213,21 +213,16 @@ h4 {font-size: 1.5em;}
 h5 {font-size: 1.3em;}
 
 
-a {
-    color: #035b26;
-    text-decoration: none;
-}
 a:visited {
     color: #1e770d;
 }
 a:hover {
     color: #023b19;
-    text-decoration: underline;
 }
 
 body, code {
     font-family: 'MuseoSans', Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
-    color: #222;
+    color: $black;
 }
 
 
@@ -324,15 +319,15 @@ body, code {
 }
 
 #nav #nav_login a {
-    color: #035825;
+    color: $link-color;
     border-bottom: 1px solid #f8e529;
     @include box-shadow(inset 0px 1px 0px 0px #8d8408);
     @include text-shadow(1px 1px 0 #efdf74);
     @include box-shadow(inset 0 0 0 0 transparent);
 }
 #nav #nav_login a {
-    background-color: #ffed00;
-    @include background-image(linear-gradient(to bottom, #ffed00 0%,#e2c003 100%));
+    background-color: $secondary-color;
+    @include background-image(linear-gradient(to bottom, $secondary-color 0%,#e2c003 100%));
 }
 
 
@@ -340,8 +335,8 @@ body, code {
     border-bottom: 1px solid #0a350a;
 }
 #flash_message {
-    background-color: #ffed00;
-    @include background-image(linear-gradient(to bottom, #ffed00 0%,#e2c003 100%));
+    background-color: $secondary-color;
+    @include background-image(linear-gradient(to bottom, $secondary-color 0%,#e2c003 100%));
 }
 #flash_message p.register_msg {
     margin: 5px 0 0 0;
@@ -379,20 +374,20 @@ body, code {
 #subheader #subnav, #subheader #searchbox {
     @include text-shadow(1px 1px 2px #012b12);
     height: 42px;
-    background-color: #429f31;
-    @include background-image(linear-gradient(to bottom, #429f31, #177117));
+    background-color: $primary-color;
+    @include background-image(linear-gradient(to bottom, $primary-color, #177117));
 }
 #subnav li.current {
     background: transparent;
 }
 #subnav li.current a {
-    color: #035825;
+    color: $link-color;
     @include text-shadow(1px 1px 0 #efdf74);
     border: 0;
 }
 #subnav li.current a {
-    background-color: #ffed00;
-    @include background-image(linear-gradient(to bottom, #ffed00 0%,#e2c003 100%));
+    background-color: $secondary-color;
+    @include background-image(linear-gradient(to bottom, $secondary-color 0%,#e2c003 100%));
 }
 #subnav li {
     background: transparent;
@@ -446,7 +441,7 @@ body, code {
     background: url(http://www.gruene-nrw.de/fileadmin/lib/themes/jahnstrasse/img/suche_submit.png) center center no-repeat #5ebd4c;
     @include border-radius(5px);
     @include box-shadow(0 1px 0 #7dd66c inset);
-    color: #035825;
+    color: $link-color;
     text-indent: -9999px;
     display: inline-block;
     width: 45px;
@@ -454,7 +449,7 @@ body, code {
     margin: 2px;
 }
 #subheader #searchform #searchsubmit:hover {
-    background-color: #429f31;
+    background-color: $primary-color;
     @include box-shadow(0 -1px 0 #28711b inset);
 }
 
@@ -486,7 +481,7 @@ body, code {
 #main #col3 .sidebar_box,
 #col3 summary {
     background-color: #65c154;
-    @include background-image(linear-gradient(to bottom, #65c154 0%,#429f31 100%));
+    @include background-image(linear-gradient(to bottom, #65c154 0%,$primary-color 100%));
 }
 
 #main #col3 .sidebar_box summary {
@@ -541,7 +536,7 @@ body, code {
     background: transparent;
     border: 0;
     font-size: 1em;
-    color: #ffed00;
+    color: $secondary-color;
 }
 
 #col3 h3 {
@@ -577,8 +572,8 @@ a.participate,
     font-weight: normal;
 }
 a.button, #flash_message a.button, .submit input, a.participate, .savebox button, #create_selection input {
-    background-color: #429f31;
-    @include background-image(linear-gradient(to bottom, #429f31, #177117));
+    background-color: $button-color;
+    @include background-image(linear-gradient(to bottom, $button-color, #177117));
 }
 a.cta:hover,
 #flash_message a.button:hover,
@@ -599,7 +594,7 @@ a.participate:hover,
 .savebox button:hover,
 #create_selection input:hover {
     background-color: #5ebd4c;
-    @include background-image(linear-gradient(to bottom, #429f31, #5ebd4c));
+    @include background-image(linear-gradient(to bottom, $button-color, #5ebd4c));
 }
 #flash_message a.button {
     padding: 0.5em 1em;
@@ -611,7 +606,7 @@ a.participate:hover,
 }
 a.show_comments:hover, a.new_comment:hover,  #col3 .tag_link a:hover {
     background-color: #5ebd4c;
-    @include background-image(linear-gradient(to bottom, #429f31, #5ebd4c));
+    @include background-image(linear-gradient(to bottom, $primary-color, #5ebd4c));
 }
 #col3 .tag_link a {
     display: inline-block;
@@ -631,8 +626,8 @@ a.button_small,
 #col3 .facet a,
 .switch_buttons a.button_small.active,
 #col1 section h2 {
-    background-color: #429f31;
-    @include background-image(linear-gradient(to bottom, #429f31, #177117));
+    background-color: $primary-color;
+    @include background-image(linear-gradient(to bottom, $primary-color, #177117));
 }
 
 
@@ -864,8 +859,8 @@ a.button.delegate:hover {
     border: 1px solid #035b26;
 }
 #col1 article .meta {
-    background-color: #ffed00;
-    @include background-image(linear-gradient(to bottom, #ffed00 0%,#e2c003 100%));
+    background-color: $secondary-color;
+    @include background-image(linear-gradient(to bottom, $secondary-color 0%,#e2c003 100%));
 }
 #col1 article .meta a {
     padding: 1em;
@@ -881,8 +876,8 @@ h3#discussions, h3#proposals, #new_proposals_table h3.section, #col1 h3.section 
     margin: 0;
 }
 h3#discussions, h3#proposals, #new_proposals_table h3.section, #col1 h3.section {
-    background-color: #429f31;
-    @include background-image(linear-gradient(to bottom, #429f31, #177117));
+    background-color: $primary-color;
+    @include background-image(linear-gradient(to bottom, $primary-color, #177117));
 }
 
 
