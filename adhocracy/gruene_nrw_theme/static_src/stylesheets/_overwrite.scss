@@ -524,26 +524,6 @@ a.more_uppercase,
 }
 
 
-a.button,
-#flash_message a.button,
-.submit input,
-a.participate,
-.savebox button,
-#create_selection input {
-    background-position: 0 0 !important;
-    display: inline-block;
-    padding: 0.2em 1em;
-    border: 1px solid #035b26;
-    @include text-shadow(1px 1px 2px #012b12);
-    color: #fff;
-    @include box-shadow(0 1px 0 #54b845 inset);
-    @include border-radius(7px);
-    font-weight: normal;
-}
-a.button, #flash_message a.button, .submit input, a.participate, .savebox button, #create_selection input {
-    background-color: $button-color;
-    @include background-image(linear-gradient(to bottom, $button-color, #177117));
-}
 a.cta:hover,
 #flash_message a.button:hover,
 .submit input:hover,
@@ -555,15 +535,6 @@ a.participate:hover,
     @include box-shadow(0 1px 0 0 #7dd66c inset);
     color: #013717;
     @include text-shadow(1px 1px 0 #63c251);
-}
-a.button:hover,
-#flash_message a.button:hover,
-.submit input:hover,
-a.participate:hover,
-.savebox button:hover,
-#create_selection input:hover {
-    background-color: #5ebd4c;
-    @include background-image(linear-gradient(to bottom, $button-color, #5ebd4c));
 }
 #flash_message a.button {
     padding: 0.5em 1em;
@@ -584,13 +555,12 @@ a.show_comments:hover, a.new_comment:hover,  #col3 .tag_link a:hover {
     color: #fff;
     margin: 0 0.1em 0.3em 0;
 }
-.pager_wrapper div.floatbox, a.button_small, #col3 .tag_link a .switch_buttons a.button_small.active, #col1 section h2 {
+#col3 .tag_link a .switch_buttons a.button_small.active, #col1 section h2 {
     border: 1px solid #035b26;
     @include text-shadow(1px 1px 2px #012b12);
     color: #fff;
 }
 .pager_wrapper div.floatbox,
-a.button_small,
 #col3 .tag_link a,
 #col3 .facet a,
 .switch_buttons a.button_small.active,
@@ -907,11 +877,6 @@ ul.comments_list li .comment {
 .comment_wrapper .comment .comment_form {
     padding: 0;
     background: transparent;
-}
-a.button_small:hover {
-    background: #035b26;
-    color: #fff;
-    text-decoration: none;
 }
 a.staticlink_formatting {
     font-size: 0.9em;

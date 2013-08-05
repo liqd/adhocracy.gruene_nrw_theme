@@ -1,0 +1,58 @@
+@mixin button-background($color) {
+    background-color: $color;
+    @include background-image(linear-gradient(to bottom, $color, saturate(darken($color, 10%), 10%)));
+
+    &:hover {
+        background-color: lighten($color, 13%);
+        @include background-image(linear-gradient(to bottom, $color, lighten($color, 13%)));
+    }
+}
+
+@mixin button($color) {
+    @include button-base;
+    line-height: 33px;
+    min-width: 82px;
+    font-weight: normal;
+
+    padding: 0.2em 1em;
+    border: 1px solid #035b26;
+    @include text-shadow(1px 1px 2px #012b12);
+    @include box-shadow(0 1px 0 #54b845 inset);
+    @include border-radius(7px);
+
+    color: #fff;
+    @include button-background($color);
+}
+
+@mixin button-small($color1, $color2) {
+    @include button-base;
+    line-height: 14px;
+    @include border-radius(5px);
+    padding: 0 10px;
+    font-size: 11px;
+    font-weight: normal;
+    border: 1px solid #035b26;
+    @include text-shadow(1px 1px 2px #012b12);
+
+    color: #fff;
+    background-color: $color1;
+    @include background-image(linear-gradient(to bottom, $color1, saturate(darken($color1, 10%), 10%)));
+
+    &:hover {
+        color: $link-color;
+        font-weight: normal;
+        text-decoration: underline;
+        background-color: $color2;
+        @include text-shadow(none);
+        @include background-image(linear-gradient(to bottom, $color2, lighten($color2, 13%)));
+    }
+    &:active, &.active {
+        background-color: $color2;
+        @include background-image(linear-gradient(to top, $color2, lighten($color2, 13%)));
+        @include box-shadow(1px 1px 1px #333 inset);
+    }
+    .inactive & {
+        background: $bg2 !important;
+        @include box-shadow(none);
+    }
+}
