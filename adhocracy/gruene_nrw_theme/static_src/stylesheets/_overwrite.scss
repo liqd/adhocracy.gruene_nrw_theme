@@ -342,38 +342,29 @@ body, code {
     background-color: $primary-color;
     @include background-image(linear-gradient(to bottom, $primary-color, #177117));
 }
-#subnav li.current {
-    background: transparent;
-}
 #subnav li.current a {
     color: $link-color;
     @include text-shadow(1px 1px 0 #efdf74);
-    border: 0;
-}
-#subnav li.current a {
-    background-color: $secondary-color;
-    @include background-image(linear-gradient(to bottom, $secondary-color 0%,#e2c003 100%));
+    @include button-background($secondary-color);
 }
 #subnav li {
-    background: transparent;
     border-right: 1px solid #023b19;
     padding: 0;
     height: 100%;
     margin: 0 0 0 -5px;
 }
 #subnav li a {
-    font-weight: normal;
-    color: #fff;
+    // overwrite default button stuff
+    @include border-radius(0);
+    border: none;
+    @include box-shadow(none);
+
     height: 100%;
     border-right: 1px solid #54b845;
-    margin: 0;
+    @include box-sizing(border-box);
 }
 #subnav li a:hover {
     text-decoration: underline;
-}
-#subnav li:hover {
-    text-decoration: underline;
-    background: transparent;
 }
 
 #subheader #searchbox {
