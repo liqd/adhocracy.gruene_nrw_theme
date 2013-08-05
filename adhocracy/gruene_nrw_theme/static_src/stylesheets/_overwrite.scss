@@ -140,23 +140,7 @@ body.logged_in #nav li,body.logged_in #nav li a {height: 24px;}
 }
 #main .ui-widget-header,
 #main .ui-tabs-nav li {
-    -moz-border-radius-topright: 0;
-    -webkit-border-top-right-radius: 0;
-    -khtml-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-    -khtml-border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -khtml-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -khtml-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0;
+    @include border-radius(0);
     border: none;
 }
 
@@ -282,22 +266,22 @@ body, code {
     background: transparent;
 }
 #nav li a {
-    text-shadow: 1px 1px 2px #012b12;
+    @include text-shadow(1px 1px 2px #012b12);
     height: auto;
     padding: 0.5em 1em;
     margin: 0;
-    border-radius: 0.7em;
+    @include border-radius(0.7em);
 }
 .logged_in #nav li a {
-    border-radius: 0;
+    @include border-radius(0);
 }
 #nav li.current a {
     color: #96DC3C;
 }
 #nav li.current a, #nav li:hover a, #nav ul.children {
     border-bottom: 1px solid #1e770d;
-    box-shadow: inset 0px 1px 0px 0px #023b19;
-    text-shadow: 1px 1px 2px #012b12;
+    @include box-shadow(inset 0px 1px 0px 0px #023b19);
+    @include text-shadow(1px 1px 2px #012b12);
     /*Inner elements should not cover inner shadows*/
     /*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
     background-image: -moz-linear-gradient(top, #024f20, #036028);
@@ -313,7 +297,7 @@ body, code {
     background-image: linear-gradient(top, #024f20, #036028);
 }
 #nav ul.children {
-    box-shadow: inset 0 0 0 0 transparent;
+    @include box-shadow(inset 0 0 0 0 transparent);
     border: 0;
 }
 #nav ul.children li {
@@ -321,16 +305,16 @@ body, code {
     padding: 2px 0 0 0;
     margin: 0;
     border-bottom: 1px solid #1e770d;
-    box-shadow: inset 0 0 0 0 transparent;
+    @include box-shadow(inset 0 0 0 0 transparent);
 }
 #nav ul.children li a {
     padding: 0;
     margin: 0;
     background: transparent;
     font-weight: normal;
-    border-radius: 0;
+    @include border-radius(0);
     border-bottom: 1px solid #023b19;
-    box-shadow: inset 0 0 0 0 transparent;
+    @include box-shadow(inset 0 0 0 0 transparent);
 }
 #nav ul.children li a:hover {
     color: #96DC3C;
@@ -364,9 +348,9 @@ body, code {
 #nav #nav_login a {
     color: #035825;
     border-bottom: 1px solid #f8e529;
-    box-shadow: inset 0px 1px 0px 0px #8d8408;
-    text-shadow: 1px 1px 0 #efdf74;
-    box-shadow: inset 0 0 0 0 transparent;
+    @include box-shadow(inset 0px 1px 0px 0px #8d8408);
+    @include text-shadow(1px 1px 0 #efdf74);
+    @include box-shadow(inset 0 0 0 0 transparent);
 }
 #nav #nav_login a {
     background: #ffed00; /* Old browsers */
@@ -427,7 +411,7 @@ body, code {
     border-right: 0;
 }
 #subheader #subnav, #subheader #searchbox {
-    text-shadow: 1px 1px 2px #012b12;
+    @include text-shadow(1px 1px 2px #012b12);
     height: 42px;
     background: #429f31;
     /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
@@ -449,7 +433,7 @@ body, code {
 }
 #subnav li.current a {
     color: #035825;
-    text-shadow: 1px 1px 0 #efdf74;
+    @include text-shadow(1px 1px 0 #efdf74);
     border: 0;
 }
 #subnav li.current a {
@@ -495,8 +479,8 @@ body, code {
 #subheader #searchform {
     border: 1px solid #0a350a;
     background: #fff;
-    box-shadow: 0 1px 0 #51bc3e ,0 0 10px #777 inset;
-    border-radius: 7px;
+    @include box-shadow(0 1px 0 #51bc3e ,0 0 10px #777 inset);
+    @include border-radius(7px);
     padding: 0;
 }
 #subheader #searchform #s {
@@ -512,8 +496,8 @@ body, code {
 #subheader #searchform #searchsubmit {
     border: 1px solid #166608;
     background: url(http://www.gruene-nrw.de/fileadmin/lib/themes/jahnstrasse/img/suche_submit.png) center center no-repeat #5ebd4c;
-    border-radius: 5px;
-    box-shadow: 0 1px 0 #7dd66c inset;
+    @include border-radius(5px);
+    @include box-shadow(0 1px 0 #7dd66c inset);
     color: #035825;
     text-indent: -9999px;
     display: inline-block;
@@ -523,7 +507,7 @@ body, code {
 }
 #subheader #searchform #searchsubmit:hover {
     background-color: #429f31;
-    box-shadow: 0 -1px 0 #28711b inset;
+    @include box-shadow(0 -1px 0 #28711b inset);
 }
 
 
@@ -541,13 +525,13 @@ body, code {
 #main #col3 ul.subpages,
 #main #col3 .sidebar_box,
 #col3 summary {
-    border-radius: 7px;
+    @include border-radius(7px);
     padding: 1em;
     border: 1px solid #023b19;
-    box-shadow: 0 1px 0 #95e087 inset;
+    @include box-shadow(0 1px 0 #95e087 inset);
     margin-top: -2px;
     color: #023b19;
-    text-shadow: 1px 1px 1px #95e087;
+    @include text-shadow(1px 1px 1px #95e087);
     display: block;
 }
 #main #col3 ul.subpages,
@@ -567,26 +551,26 @@ body, code {
     border: 0;
     background: transparent;
     padding: 1em 0 0 0;
-    border-radius: 0;
-    @import box-shadow(0 0 0 transparent);
+    @include border-radius(0);
+    @include box-shadow(0 0 0 transparent);
 }
 #main #col3 .sidebar_box .tile {
     border-bottom: 1px solid #7ad769;
     background: transparent;
-    box-shadow: 0 -1px 0 0 #2b6e1e inset;
+    @include box-shadow(0 -1px 0 0 #2b6e1e inset);
 }
 #main #col3 .sidebar_box span.abadge {
     margin-right: 1em;
 }
 #main #col3 ul.subpages a {
     color: #023b19;
-    text-shadow: 1px 1px 1px #95e087;
+    @include text-shadow(1px 1px 1px #95e087);
     margin-bottom: 0.5em;
     display: block;
 }
 #main #col3 ul.subpages .current_page_item a {
     color: #fff;
-    text-shadow: 1px 1px 1px #012b12;
+    @include text-shadow(1px 1px 1px #012b12);
 }
 
 #main #col3 .sidebar_box, #main #col3 .sidebar_box .meta {
@@ -594,7 +578,7 @@ body, code {
 }
 #main #col3 .sidebar_box a, #col3 summary a {
     color: #fff;
-    text-shadow: 1px 1px 1px #012b12;
+    @include text-shadow(1px 1px 1px #012b12);
 }
 #main #col3 .sidebar_box h3 {
     color: #023b19;
@@ -644,10 +628,10 @@ a.participate,
     display: inline-block;
     padding: 0.2em 1em;
     border: 1px solid #035b26;
-    text-shadow: 1px 1px 2px #012b12;
+    @include text-shadow(1px 1px 2px #012b12);
     color: #fff;
-    box-shadow: 0 1px 0 #54b845 inset;
-    border-radius: 7px;
+    @include box-shadow(0 1px 0 #54b845 inset);
+    @include border-radius(7px);
     font-weight: normal;
 }
 a.button, #flash_message a.button, .submit input, a.participate, .savebox button, #create_selection input {
@@ -674,9 +658,9 @@ a.participate:hover,
 #create_selection input:hover {
     background: #5ebd4c;
     border-color: #166608;
-    box-shadow: 0 1px 0 0 #7dd66c inset;
+    @include box-shadow(0 1px 0 0 #7dd66c inset);
     color: #013717;
-    text-shadow: 1px 1px 0 #63c251;
+    @include text-shadow(1px 1px 0 #63c251);
 }
 a.button:hover,
 #flash_message a.button:hover,
@@ -730,7 +714,7 @@ a.show_comments:hover, a.new_comment:hover,  #col3 .tag_link a:hover {
 }
 .pager_wrapper div.floatbox, a.button_small, #col3 .tag_link a .switch_buttons a.button_small.active, #col1 section h2 {
     border: 1px solid #035b26;
-    text-shadow: 1px 1px 2px #012b12;
+    @include text-shadow(1px 1px 2px #012b12);
     color: #fff;
 }
 .pager_wrapper div.floatbox,
@@ -783,7 +767,7 @@ a.button_small,
     background: transparent;
     border: 0;
     padding: 0;
-    text-shadow: 0 0 0;
+    @include text-shadow(0 0 0);
     color: #5ebd4c;
     font-weight: normal;
 }
@@ -811,7 +795,7 @@ a.button_small,
 .inactive .switch_buttons a.button_small {
     background: #eee;
     border: 1px solid #ccc;
-    text-shadow: 0 0 0;
+    @include text-shadow(0 0 0);
     color: #ccc;
 }
 
@@ -917,17 +901,17 @@ ul.tabnav li a:hover {
 .joyride-tip-guide .joyride-prev-tip {
     padding: 0 1em !important;
     border: 0;
-    box-shadow: 0 0 0 transparent !important;
+    @include box-shadow(0 0 0 transparent !important);
     height: auto !important;
     background: #035b26 !important;
     color: #fff !important;
-    border-radius: 5px !important;
+    @include border-radius(5px !important);
 }
 .joyride-tip-guide .joyride-next-tip:hover,
 .joyride-tip-guide .joyride-prev-tip:hover {
     color: #035b26 !important;
     background: #fff !important;
-    border-radius: 5px !important;
+    @include border-radius(5px !important);
 }
 
 
@@ -966,12 +950,12 @@ form#create_user {
 a.follow_paper, a.vote_count, a.button.delegate {
     font-weight: normal;
     font-size: 1em;
-    text-shadow: 0 0 0;
+    @include text-shadow(0 0 0);
     border: 0;
 }
 a.button.delegate {
     padding-left: 3em;
-    box-shadow: 0 0 0;
+    @include box-shadow(0 0 0);
 }
 a.button.delegate:hover {
     background: url('/images/sprite_buttons.png') no-repeat -35px -1px;
@@ -1001,7 +985,7 @@ a.button.delegate:hover {
 
 h3#discussions, h3#proposals, #new_proposals_table h3.section, #col1 h3.section {
     border: 1px solid #035b26;
-    text-shadow: 1px 1px 2px #012b12;
+    @include text-shadow(1px 1px 2px #012b12);
     color: #fff;
     padding: 0.5em;
     margin: 0;
