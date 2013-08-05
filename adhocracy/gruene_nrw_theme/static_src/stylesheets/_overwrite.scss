@@ -428,7 +428,12 @@ body, code {
     padding-left: 0;
 }
 #col3_content {
-    padding: 0 0 0 3em;
+    padding: 0;
+    background: none;
+
+    .sidebar_box {
+        margin: 2em 0;
+    }
 }
 #main #col3 ul.subpages,
 #main #col3 .sidebar_box,
@@ -437,7 +442,6 @@ body, code {
     padding: 1em;
     border: 1px solid #023b19;
     @include box-shadow(0 1px 0 #95e087 inset);
-    margin-top: -2px;
     color: #023b19;
     @include text-shadow(1px 1px 1px #95e087);
     display: block;
