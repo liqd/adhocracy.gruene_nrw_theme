@@ -254,8 +254,10 @@ body, code {
         }
     }
     #nav_login a {
-        @include button($secondary-color);
-        min-width: 0;
+        @include button-background($secondary-color);
+        color: $link-color;
+        border-bottom: 1px solid #f8e529;
+        @include text-shadow(1px 1px 0 #efdf74);
     }
 }
 .logged_in #nav > .hlist > ul > li a {
