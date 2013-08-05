@@ -811,6 +811,19 @@ h3#discussions, h3#proposals, #new_proposals_table h3.section, #col1 h3.section 
 }
 
 
+#col1 section h2,
+h3#discussions,
+h3#proposals,
+#new_proposals_table h3.section,
+#col1 h3.section {
+    display: block;
+
+    + hr {
+        display: none;
+    }
+}
+
+
 #col1 .table .meta .ts{
     font-weight: normal;
     color: #000;
