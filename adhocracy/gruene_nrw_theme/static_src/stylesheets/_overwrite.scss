@@ -781,13 +781,7 @@ a.follow_paper, a.vote_count, a.button.delegate {
     border: 0;
 }
 a.button.delegate {
-    padding-left: 3em;
     @include box-shadow(0 0 0);
-}
-a.button.delegate:hover {
-    background: url('/images/sprite_buttons.png') no-repeat -35px -1px;
-    background-position: -35px -52px;
-    text-decoration: none;
 }
 
 #col1 article .meta {
