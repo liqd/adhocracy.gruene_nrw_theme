@@ -512,7 +512,15 @@ a.participate:hover,
     margin: 0;
     padding: 0.5em;
 }
-a.show_comments:hover, a.new_comment:hover,  #col3 .tag_link a:hover {
+a.show_comments, a.new_comment {
+    border: 1px solid transparent;
+    @include text-shadow(none);
+
+    &:hover {
+        border-color: $link-color;
+    }
+}
+#col3 .tag_link a:hover {
     background-color: #5ebd4c;
     @include background-image(linear-gradient(to bottom, $primary-color, #5ebd4c));
 }
@@ -819,6 +827,9 @@ h3#proposals,
 ul.comments_list,
 .vote_wrapper {
     margin-bottom: 2em;
+}
+.vote_comment .vote_wrapper {
+    margin: 0;
 }
 ul.comments_list {
     background: transparent;
