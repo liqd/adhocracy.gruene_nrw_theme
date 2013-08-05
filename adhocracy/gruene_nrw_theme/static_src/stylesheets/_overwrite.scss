@@ -928,12 +928,6 @@ a.icon_link {
 #projects_slides #prev_link, #projects_slides #next_link, #projects_slides .prev, #projects_slides .next {
     background-image: url('/static_theme/static/images/sprite.png');
 }
-.more_link {
-    background: url("/static_theme/static/images/sprite.png") no-repeat left -2px;
-}
-.create_proposal_link {
-    background: url("/static_theme/static/images/sprite.png") no-repeat left 2px;
-}
 
 
 /* use custom sprite_icons */
@@ -941,9 +935,6 @@ a.icon_link {
 .vote_up span,
 .vote_down span,
 .vote.big .vote_up span,
-.vote.big .vote_down span,
-a.show_comments:after, a.new_comment:after,
-.more_arrow,
-.more_arrow.less {
+.vote.big .vote_down span {
     background-image: url('/static_theme/static/images/sprite_icons.png');
 }
