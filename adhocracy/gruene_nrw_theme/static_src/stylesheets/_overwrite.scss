@@ -637,6 +637,19 @@ a.show_comments:hover, a.new_comment:hover,  #col3 .tag_link a:hover {
 }
 
 /*Listen*/
+#col1 .content_list {
+    > li {
+        background: none;
+        border-bottom-style: solid;
+
+        &:first-child {
+            border-top-style: solid;
+        }
+        .content_list {
+            border: none;
+        }
+    }
+}
 #col1 #instance_table .content_list {
     border: 1px solid #035b26;
     border-top: 0;
@@ -886,6 +899,9 @@ a.staticlink_formatting {
     font-size: 0.9em;
 }
 
+hr {
+    border-style: solid;
+}
 
 /* Use sprites from theme */
 
