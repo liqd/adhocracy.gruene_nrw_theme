@@ -9,16 +9,6 @@
 ******************************************************/
 
 
-/*Main navigation*/
-
-#nav li {padding-top: 7px; /*make drop down menus work*/}
-#nav ul.children li {line-height: inherit;height: initial;}
-#nav ul.children ul.children {position: relative;background-image: none;margin: 0;min-width: 0;padding: 5px 0 5px 0;right: 0;}
-
-#nav ul ul ul.children {display: none;left: 100%;}
-body.logged_in #nav li,body.logged_in #nav li a {height: 24px;}
-
-
 /*Wordpress pages sidebar*/
 
 #main .widget-area .shailan_SubpagesWidget,#main .widget-container ul,#main ul.subpages li,#main .widget-container {list-style: none;background: none;}
@@ -204,95 +194,71 @@ body, code {
 
 #nav {
     font-weight: normal;
-}
-#nav li,
-#nav li.current,
-#nav li:hover {
-    height: auto;
-    padding: 0;
-    padding-top: 0 !important;
-    margin: 0;
-    background: transparent;
-}
-#nav li a {
-    @include text-shadow(1px 1px 2px #012b12);
-    height: auto;
-    padding: 0.5em 1em;
-    margin: 0;
-    @include border-radius(0.7em);
-}
-.logged_in #nav li a {
-    @include border-radius(0);
-}
-#nav li.current a {
-    color: #96DC3C;
-}
-#nav li.current a, #nav li:hover a, #nav ul.children {
-    border-bottom: 1px solid #1e770d;
-    @include box-shadow(inset 0px 1px 0px 0px #023b19);
-    @include text-shadow(1px 1px 2px #012b12);
-    background-color: #024f20;
-    @include background-image(linear-gradient(to bottom, #024f20, #036028));
-}
-#nav ul.children {
-    @include box-shadow(inset 0 0 0 0 transparent);
-    border: 0;
-}
-#nav ul.children li {
-    background: transparent;
-    padding: 2px 0 0 0;
-    margin: 0;
-    border-bottom: 1px solid #1e770d;
-    @include box-shadow(inset 0 0 0 0 transparent);
-}
-#nav ul.children li a {
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    font-weight: normal;
-    @include border-radius(0);
-    border-bottom: 1px solid #023b19;
-    @include box-shadow(inset 0 0 0 0 transparent);
-}
-#nav ul.children li a:hover {
-    color: #96DC3C;
-}
-#nav ul.children .children,
-#nav ul.children .children li,
-#nav ul.children .children a {
-    display: none !important;
-    position: absolute;
-    top: -99999px;
-    height: 0px;
-    overflow: hidden;
-}
-#nav #user_menu:hover ul.children {
-    margin-left: -250px;
-}
-#nav #user_menu a.show_me {
-    height: auto;
-    padding: 0.5em 1.5em 0.5em 1em !important;
-    margin: 0;
-    line-height: 1em;
-    background-position: right -344px;
-    
-}
-#nav #user_menu {
-    margin-top: -6px;
-}
-#nav #user_menu li{
-}
 
-#nav #nav_login a {
-    color: $link-color;
-    border-bottom: 1px solid #f8e529;
-    @include box-shadow(inset 0px 1px 0px 0px #8d8408);
-    @include text-shadow(1px 1px 0 #efdf74);
-    @include box-shadow(inset 0 0 0 0 transparent);
+    > .hlist > ul > li {
+        /* reset */
+        &, & > a {
+            height: auto;
+            padding: 0;
+            margin: 0;
+            background: transparent;
+        }
+        &:hover, &.current {
+            background: none;
+        }
+        a {
+            @include text-shadow(1px 1px 2px #012b12);
+            height: auto;
+            padding: 0.5em 1em;
+            margin: 0;
+            @include border-radius(0.7em);
+        }
+        &.current > a {
+            color: #96DC3C;
+        }
+        &.current > a, &:hover > a, ul.children {
+            @include box-shadow(inset 0px 1px 0px 0px #023b19);
+            @include text-shadow(1px 1px 2px #012b12);
+            background-color: #024f20;
+            @include background-image(linear-gradient(to bottom, #024f20, #036028));
+        }
+        ul.children {
+            @include box-shadow(inset 0 0 0 0 transparent);
+            border: 0;
+
+            li {
+                background: transparent;
+                padding: 2px 0 0;
+                margin: 0;
+                @include box-shadow(inset 0 0 0 0 transparent);
+
+                a {
+                    padding: 0;
+                    margin: 0;
+                    background: transparent;
+                    font-weight: normal;
+                    @include border-radius(0);
+                    @include box-shadow(inset 0 0 0 0 transparent);
+
+                    &:hover {
+                        color: #96DC3C;
+                    }
+                }
+            }
+            .children {
+                display: none;
+            }
+        }
+    }
+    #nav_login a {
+        @include button($secondary-color);
+        min-width: 0;
+    }
 }
-#nav #nav_login a {
-    background-color: $secondary-color;
-    @include background-image(linear-gradient(to bottom, $secondary-color 0%,#e2c003 100%));
+.logged_in #nav > .hlist > ul > li a {
+    @include border-radius(0);
+    line-height: 32px;
+    padding: 0 1em;
 }
 
 
