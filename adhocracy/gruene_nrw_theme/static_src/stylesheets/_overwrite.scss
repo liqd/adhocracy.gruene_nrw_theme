@@ -263,10 +263,19 @@ body, code {
         border-left: none;
     }
 }
-.logged_in #nav > .hlist > ul > li a {
-    @include border-radius(0);
-    line-height: 32px;
-    padding: 0 1em;
+body.logged_in #nav  {
+    padding-top: 0;
+
+    > .hlist > ul > li {
+        padding-top: 0;
+
+        > a {
+            @include border-radius(0);
+            line-height: 40px;
+            height: 40px;
+            padding: 0 1em;
+        }
+    }
 }
 
 
