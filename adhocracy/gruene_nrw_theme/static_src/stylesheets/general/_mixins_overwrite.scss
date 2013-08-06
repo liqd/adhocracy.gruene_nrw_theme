@@ -22,6 +22,10 @@
 
     color: #fff;
     @include button-background($color);
+
+    &:hover {
+        @include text-shadow(none);
+    }
 }
 
 @mixin button-small($color1, $color2) {
