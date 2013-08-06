@@ -889,7 +889,22 @@ a.icon_link {
 #projects_slides #prev_link, #projects_slides #next_link, #projects_slides .prev, #projects_slides .next {
     background-image: url('/static_theme/static/images/sprite.png');
 }
+.pager {
+    .prev_page a, .next_page a, .prev_page span, .next_page span, a, > span {
+        color: white;
+        @include text-shadow(1px 1px 2px #012b12);
+        @include box-shadow(0 1px 0 #54b845 inset);
+        @include button-background($primary-color);
 
+        &:hover, &.current {
+            color: $link-color;
+            @include text-shadow(none);
+        }
+        &.current {
+            @include button-background($secondary-color);
+        }
+    }
+}
 
 /* use custom sprite_icons */
 
