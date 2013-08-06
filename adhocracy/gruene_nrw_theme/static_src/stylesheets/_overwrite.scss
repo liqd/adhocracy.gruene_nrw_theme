@@ -718,24 +718,11 @@ ul.tabnav li a:hover {
     padding: 1em;
 }
 
-/*Tutorial */
-.joyride-tip-guide .joyride-next-tip,
-.joyride-tip-guide .joyride-prev-tip {
-    padding: 0 1em !important;
-    border: 0;
-    @include box-shadow(0 0 0 transparent !important);
-    height: auto !important;
-    background: #035b26 !important;
-    color: #fff !important;
-    @include border-radius(5px !important);
+#main .joyride-next-tip, #main .joyride-prev-tip {
+    &:hover {
+        border: 1px solid $link-color !important;
+    }
 }
-.joyride-tip-guide .joyride-next-tip:hover,
-.joyride-tip-guide .joyride-prev-tip:hover {
-    color: #035b26 !important;
-    background: #fff !important;
-    @include border-radius(5px !important);
-}
-
 
 .full_teaser {
     margin-top: 3em;
