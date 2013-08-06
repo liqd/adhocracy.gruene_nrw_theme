@@ -259,6 +259,9 @@ body, code {
         border-bottom: 1px solid #f8e529;
         @include text-shadow(1px 1px 0 #efdf74);
     }
+    #user_menu {
+        border-left: none;
+    }
 }
 .logged_in #nav > .hlist > ul > li a {
     @include border-radius(0);
