@@ -249,7 +249,7 @@ header + * {
     height: auto;
     margin-top: 19px;
 
-    body.logged_in & {
+    body.compact & {
         height: auto;
         margin-top: 2px;
     }
