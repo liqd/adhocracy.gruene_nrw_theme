@@ -106,5 +106,9 @@
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_pages.xml" />
     <xi:include href="rules_wordpress_javascript.xml" />
 
+    <!--replace adhocarcy code logo as it is not visible on dark background-->
+    <replace css:content="#link_footer_logo img">
+        <img src="/static_theme/static/images/logo_adhocracy_white.png" alt="AdhocracyCode" />
+    </replace>
   </rules>
 </rules>
