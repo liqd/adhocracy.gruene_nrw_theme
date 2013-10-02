@@ -1,17 +1,19 @@
-$link-color: #035b26;
-$primary-color: #429f31;
-$secondary-color: #ffed00;
+$link-color: #62b32d;
+$primary-color: $link-color;
+$secondary-color: #ffe000;
 $black: #222;
 $button-color: $primary-color;
 $red: #9D4647;
 $green: $primary-color;
-$register-color: $green;
-$header-color: $primary-color;
-$header-color2: #024f20;
+$dark-green: #0a321e;
+$register-color: #ffe000;
+$header-color: #035925;
+$header-color2: #0a350a;
 
 $bg1: #f4f4f4;
 $bg2: #e6e6e6;
-$border: $link-color;
 $fg1: #666;
+$border: $bg2;
+$footer-fg: #85998f;
 
 $flash: #fffde4;
