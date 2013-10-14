@@ -386,6 +386,8 @@ header + * {
 }
 
 #col3 .sidebar_box,
+#settings #col3_content .sidebar_box,
+#col3_content.box-style .sidebar_box,
 .pager_wrapper .floatbox {
     @include gruene-gradient();
     color: #fff;
