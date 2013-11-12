@@ -66,13 +66,13 @@ msgstr "In Gruppe „%s“"
 
 #, python-format
 msgid "We cannot find the badge with the id %s"
-msgstr "Das Badge mit der ID %s konnte nicht gefunden werden"
+msgstr "Die Plakette mit der ID %s konnte nicht gefunden werden"
 
 msgid "Badge changed successfully"
-msgstr "Badge erfolgreich geändert"
+msgstr "Plakette erfolgreich geändert"
 
 msgid "Badge deleted successfully"
-msgstr "Badge erfolgreich gelöscht"
+msgstr "Plakette erfolgreich gelöscht"
 
 msgid "oldest"
 msgstr "älteste"
@@ -152,7 +152,7 @@ msgid "Votings"
 msgstr "Abstimmungen"
 
 msgid "Badges"
-msgstr "Badges"
+msgstr "Plaketten"
 
 msgid "Mass message service"
 msgstr "Benachrichtigungsdienst"
@@ -451,7 +451,7 @@ msgstr "Vorschlag: %(proposal)s"
 
 #, python-format
 msgid "You are not allowed to edit badge %i"
-msgstr "Du bist nicht berechtigt, Badge %i zu bearbeiten"
+msgstr "Du bist nicht berechtigt, Plakette %i zu bearbeiten"
 
 msgid "relevance"
 msgstr "relevanz"
@@ -497,10 +497,10 @@ msgid "Could not find the entity '%s'"
 msgstr "'%s' konnte nicht gefunden werden. "
 
 msgid "All users have been assigned to their respective treatment badges."
-msgstr "Allen Benutzern wurden ihre zugehörigen Treatment-Badges zugewiesen."
+msgstr "Allen Benutzern wurden ihre zugehörigen Treatment-Plaketten zugewiesen."
 
 msgid "All users are already assigned to their respective treatment badges."
-msgstr "Allen Benutzern sind bereits die zugehörigen Treatment-Badges zugewiesen."
+msgstr "Allen Benutzern sind bereits die zugehörigen Treatment-Plaketten zugewiesen."
 
 msgid ""
 "You have been logged out while authenticating at twitter. Please try again."
@@ -677,19 +677,19 @@ msgid "The account has been deleted."
 msgstr "Der Nutzer wurde gelöscht."
 
 msgid "Invalid badge choice."
-msgstr "Ungültige Badge-Auswahl."
+msgstr "Ungültige Plaketten-Auswahl."
 
 msgid "Added badges"
-msgstr "Badges hinzugefügt"
+msgstr "Plaketten hinzugefügt"
 
 msgid "Added badge"
-msgstr "Badge hinzugefügt"
+msgstr "Plakette hinzugefügt"
 
 msgid "Removed badges"
-msgstr "Badges entfernt"
+msgstr "Plaketten entfernt"
 
 msgid "Removed badge"
-msgstr "Badge entfernt"
+msgstr "Plakette entfernt"
 
 #, python-format
 msgid "%(user)s is using Adhocracy, a democratic decision-making tool."
@@ -785,24 +785,24 @@ msgid "At least one character is required"
 msgstr "Mindestens ein Zeichen wird benötigt"
 
 msgid "You're not allowed to edit global badges"
-msgstr "Sie haben nicht die Rechte, um Installationsweite Badges zu bearbeiten"
+msgstr "Sie haben nicht die Rechte, um Installationsweite Plaketten zu bearbeiten"
 
 #, python-format
 msgid "No Badge ID '%s' exists"
-msgstr "Das Badge '%s' existiert nicht."
+msgstr "Die Plakette '%s' existiert nicht."
 
 msgid "No badges selected"
-msgstr "Keine Badges ausgewählt."
+msgstr "Keine Plaketten ausgewählt."
 
 msgid "Duplicates in input set of user badge IDs"
-msgstr "Duplikate bei der Eingabe von Benutzer Badge IDs"
+msgstr "Duplikate bei der Eingabe von Benutzer Plakette IDs"
 
 #, python-format
 msgid "Could not find badges %s"
-msgstr "%s Badges konnten nicht gefunden werden"
+msgstr "%s Plaketten konnten nicht gefunden werden"
 
 msgid "Duplicates in input set of user badge labels"
-msgstr "Duplikate bei der Eingabe von Userbadge labels"
+msgstr "Duplikate bei der Eingabe von Nutzerplaketten Namen"
 
 #, python-format
 msgid "Cannot use global category %s in this instance"
@@ -810,7 +810,7 @@ msgstr "Die globale Kategorie %s kann in dieser Gruppe nicht verwendet werden."
 
 #, python-format
 msgid "Badge with ID '%s' not valid in this instance"
-msgstr "Badge mit ID '%s' ist nicht gültig in dieser Gruppe."
+msgstr "Plakette mit ID '%s' ist nicht gültig in dieser Gruppe."
 
 msgid "Parent and child category instance have to match"
 msgstr "Die Eltern- und Kindkategorie Gruppen müssen zusammenpassen"
@@ -1061,7 +1061,7 @@ msgstr "Sortiere nach der Anzahl der Stimmen für diesen Vorschlag"
 msgid ""
 "First sort by proposals with important badges, then by the difference "
 "between number of votes for and against and also prefer newer proposals"
-msgstr "Sortiere zuerst nach wichtigen Badges, dann nach der Differenz der Stimmen für und gegen den Vorschlag und bevorzuge außerdem neuere Vorschläge"
+msgstr "Sortiere zuerst nach wichtigen Plaketten, dann nach der Differenz der Stimmen für und gegen den Vorschlag und bevorzuge außerdem neuere Vorschläge"
 
 msgid ""
 "Prefer proposals where the gap between votes for and against is close, also "
@@ -1084,7 +1084,7 @@ msgid "activity"
 msgstr "Aktivität"
 
 msgid "Badge"
-msgstr "Badge"
+msgstr "Plakette"
 
 msgid "Instance hidden state"
 msgstr "Sichtbarkeitsstatus der Gruppe"
@@ -1303,7 +1303,7 @@ msgstr "bearbeitete den Vorschlag %(proposal)s"
 
 #, python-format
 msgid "Proposal badged: %(proposal)s"
-msgstr "Vorschlag mit Badge versehen. %(proposal)s"
+msgstr "Vorschlag mit Plakette versehen. %(proposal)s"
 
 #, python-format
 msgid "badged %(proposal)s"
@@ -1556,19 +1556,19 @@ msgid "Click to see the list of votes"
 msgstr "Klicken Sie hier für eine Übersicht über die abgegebenen Stimmen"
 
 msgid "User badge"
-msgstr "Nutzerbadge"
+msgstr "Nutzerplakette"
 
 msgid "Instance badge"
-msgstr "Gruppenbadge"
+msgstr "Gruppenplakette"
 
 msgid "Proposal badge"
-msgstr "Vorschlagsbadge"
+msgstr "Vorschlagsplakette"
 
 msgid "Category"
 msgstr "Kategorie"
 
 msgid "Thumbnail badge"
-msgstr "Miniaturbildbadge"
+msgstr "Miniaturbildplakette"
 
 #, python-format
 msgid ""
@@ -1909,7 +1909,7 @@ msgid "Include password hashes"
 msgstr "Passwort-Hashes hinzufügen"
 
 msgid "Export badges"
-msgstr "Badges exportieren"
+msgstr "Plaketten exportieren"
 
 msgid "Export content (instances)"
 msgstr "Inhalte exportieren (Gruppen)"
@@ -1921,7 +1921,7 @@ msgid "Include comments"
 msgstr "Kommentar hinzufügen"
 
 msgid "Include proposal creator badges"
-msgstr "Badges für Urheber von Vorschlägen hinzufügen"
+msgstr "Plaketten für Urheber von Vorschlägen hinzufügen"
 
 msgid "Include ratings"
 msgstr "Bewertungen hinzufügen"
@@ -1963,7 +1963,7 @@ msgid "Generate welcome codes"
 msgstr "Generiere Einladungs-Tokens"
 
 msgid "Import badges"
-msgstr "Badges importieren"
+msgstr "Plaketten importieren"
 
 msgid "Import content (instances)"
 msgstr "Inhalte importieren (Gruppen)"
@@ -2028,7 +2028,7 @@ msgid "Send an email to users"
 msgstr "Senden Sie eine E-Mail an Benutzer"
 
 msgid "Assign treatment badges"
-msgstr "Treatment-Badges zuweisen"
+msgstr "Treatment-Plaketten zuweisen"
 
 msgid "Site administration"
 msgstr "Seiteneinstellungen"
@@ -2040,7 +2040,7 @@ msgid ""
 "Paste the content of a CSV file, e.g. exported from Excel, with the 4 "
 "columns username, display name, email and badges (badges are optional, comma"
 " separated and with quotes around the list)"
-msgstr "Fügen Sie den Inhalt einer CSV- Datei ein, z.B. exportiert aus Excel, mit den 4 Spalten Benutzername, Anzeigename, Badges und E-mail (Badges sind optional, komma-separiert und mit Anführungszeichen um die Badgeliste)"
+msgstr "Fügen Sie den Inhalt einer CSV- Datei ein, z.B. exportiert aus Excel, mit den 4 Spalten Benutzername, Anzeigename, Badges und E-mail (Plaketten sind optional, komma-separiert und mit Anführungszeichen um die Plaketteliste)"
 
 msgid "Users CSV"
 msgstr "Benutzer CSV"
@@ -2103,25 +2103,25 @@ msgstr "Diese Nutzer*innen wurden erstellt, wir konnten jedoch keine E-Mails ver
 
 msgid ""
 "Note that the following entities will be unbadged if this badge is deleted:"
-msgstr "Beachte, dass das Badge bei einer Löschung von den folgenden Entitäten entfernt wird:"
+msgstr "Beachte, dass die Plakette bei einer Löschung von den folgenden Entitäten entfernt wird:"
 
 msgid "This badge is not in use, so it can be removed safely."
-msgstr "Dieses Badge wird nicht genutzt. Es kann gefahrlos entfernt werden."
+msgstr "Diese Plakette wird nicht genutzt. Sie kann gefahrlos entfernt werden."
 
 msgid "Are you sure you want to delete this badge?"
-msgstr "Bist du sicher, dass du dieses Badge löschen willst?"
+msgstr "Bist du sicher, dass du diese Plakette löschen willst?"
 
 msgid "Confirm"
 msgstr "Bestätigen"
 
 msgid "Badge title"
-msgstr "Titel des Badges"
+msgstr "Titel der Plakette"
 
 msgid "Badge description"
-msgstr "Beschreibung des Badges"
+msgstr "Beschreibung der Plakette"
 
 msgid "The color that is used to show the badge"
-msgstr "Die Farbe, die für den Badge benutzt wird"
+msgstr "Die Farbe, die für die Plakette benutzt wird"
 
 msgid "Like '#a4a4a4'"
 msgstr "'#a4a4a4' liken"
@@ -2133,10 +2133,10 @@ msgid "Delete current thumbnail image"
 msgstr "Lösche aktuelles Miniaturbild"
 
 msgid "Upload thumbnail icon. This is used instead of color to show the badge"
-msgstr "Miniaturbild hochladen. Dieses wird verwendet anstatt Farbe um Badges darzustellen."
+msgstr "Miniaturbild hochladen. Dieses wird verwendet anstatt Farbe um Plaketten darzustellen."
 
 msgid "Check to hide badge in user interface"
-msgstr "Auswählen, um Badge im User Interface zu verstecken"
+msgstr "Auswählen, um Plakette im User Interface zu verstecken"
 
 msgid "Group"
 msgstr "Benutzerrolle"
@@ -2147,25 +2147,25 @@ msgstr "Keine Benutzerrolle"
 msgid ""
 "Automatically assign all users with this badge to the selected group for all"
 " instances in the adhocracy site."
-msgstr "Ordne alle Nutzer*innen mit diesem Badge automatisch der gewählten Gruppe zu, für alle Instanzen in Adhocracy."
+msgstr "Ordne alle Nutzer*innen mit dieser Plakette automatisch der gewählten Gruppe zu, für alle Instanzen in Adhocracy."
 
 msgid "Automatically assign all users with this badge to the selected group."
-msgstr "Ordne alle Nutzer*innen mit diesem Badge automatisch der gewählten Gruppe zu."
+msgstr "Ordne alle Nutzer*innen mit dieser Plakette automatisch der gewählten Gruppe zu."
 
 msgid "Display group in instances"
 msgstr "Nutzerrollen in den Gruppen anzeigen"
 
 msgid "Display this badge instead of the normal user group."
-msgstr "Zeige dieses Badge an, anstatt der normalen Gruppe des Nutzers."
+msgstr "Zeige diese Plakette an, anstatt der normalen Gruppe des Nutzers."
 
 msgid "Global"
 msgstr "Global"
 
 msgid "Parent Badge"
-msgstr "Eltern Badge"
+msgstr "Eltern Plakette"
 
 msgid "No Parent Badge"
-msgstr "Keine Eltern Badge"
+msgstr "Keine Eltern Plakette"
 
 msgid "Global categories"
 msgstr "Globale Kategorien"
@@ -2176,13 +2176,13 @@ msgstr "Lokale Gruppenkategorien"
 msgid ""
 "Description to select children of this badge (irrelevant if this badge "
 "doesn't have any children)"
-msgstr "Angabe um die Kinder dieser Badge auszuwählen (irrelevant falls diese Badge keine Kinder hat)"
+msgstr "Angabe um die Kinder dieser Plakette auszuwählen (irrelevant falls diese Plakette keine Kinder hat)"
 
 msgid "Impact"
 msgstr "Einfluss"
 
 msgid "Save Badge"
-msgstr "Badge speichern"
+msgstr "Plakette speichern"
 
 msgid "Edit"
 msgstr "Bearbeiten"
@@ -2191,7 +2191,7 @@ msgid "Delete"
 msgstr "Löschen"
 
 msgid "No badges added yet."
-msgstr "Bisher wurden keine Badges hinzugefügt."
+msgstr "Bisher wurden keine Plaketten hinzugefügt."
 
 msgid "Color"
 msgstr "Farbe"
@@ -2218,22 +2218,22 @@ msgid "Parent"
 msgstr "Eltern"
 
 msgid "User Badges"
-msgstr "Benutzerbadge"
+msgstr "Nutzerplakette"
 
 msgid "New"
 msgstr "Neu"
 
 msgid "Proposal Badges"
-msgstr "Badges für Vorschläge"
+msgstr "Plaketten für Vorschläge"
 
 msgid "Proposal Category Badges"
 msgstr "Kategorien von Vorschlägen"
 
 msgid "Proposal Thumbnail Badges"
-msgstr "Miniaturbild-Badges dieses Vorschlags"
+msgstr "Miniaturbild-Plaketten dieses Vorschlags"
 
 msgid "Instance Badges"
-msgstr "Gruppen-Badge"
+msgstr "Gruppen-Plakette"
 
 msgid "Comment"
 msgstr "Kommentar"
@@ -2579,13 +2579,13 @@ msgstr "Sind Sie sicher, dass Sie diese Gruppe verlassen wollen? Sie werden kein
 
 #, python-format
 msgid "Edit badges for %s"
-msgstr "Badges von %s bearbeiten"
+msgstr "Plaketten von %s bearbeiten"
 
 msgid "Edit Badges"
-msgstr "badge bearbeiten"
+msgstr "Plakette bearbeiten"
 
 msgid "badge"
-msgstr "Badge"
+msgstr "Plakette"
 
 msgid "Create new instance"
 msgstr "Neue Gruppe erstellen"
@@ -2644,10 +2644,10 @@ msgid "Extra CSS"
 msgstr "Extra CSS"
 
 msgid "Thumbnail badges width"
-msgstr "Miniaturbild-Badges Breite"
+msgstr "Miniaturbild-Plaketten Breite"
 
 msgid "Thumbnail badges height"
-msgstr "Miniaturbild-Badges Höhe"
+msgstr "Miniaturbild-Plaketten Höhe"
 
 msgid "Use Norms"
 msgstr "Entwürfe verwenden"
@@ -2671,7 +2671,7 @@ msgid "Use milestones"
 msgstr "Termine verwenden"
 
 msgid "Use thumbnail badges"
-msgstr "Verwende Miniaturbild-Badges"
+msgstr "Verwende Miniaturbild-Plaketten"
 
 msgid "Hide global categories"
 msgstr "Verstecke globale Kategorien"
@@ -2728,10 +2728,10 @@ msgid "Enable vote delegation"
 msgstr "Delegation erlauben"
 
 msgid "Break down Voting Result by Badge"
-msgstr "Abstimmungsresultat nach Badge aufteilen"
+msgstr "Abstimmungsresultat nach Plakette aufteilen"
 
 msgid "Display how the users with the selected badges feel about the issue."
-msgstr "Die Meinung der Benutzer zu diesem Thema anzeigen, welche die ausgewählten Badges besitzen."
+msgstr "Die Meinung der Benutzer zu diesem Thema anzeigen, welche die ausgewählten Plaketten besitzen."
 
 msgid "Home"
 msgstr "Gruppe"
@@ -2828,7 +2828,7 @@ msgid "... by instance:"
 msgstr ".. nach Gruppe:"
 
 msgid "... by badge:"
-msgstr ".. nach Badge:"
+msgstr ".. nach Plakette:"
 
 msgid "Subject"
 msgstr "Betreff"
@@ -3345,16 +3345,16 @@ msgid "Are you sure you want to delete this proposal?"
 msgstr "Sind Sie sicher, dass Sie diesen Vorschlag entfernen möchten?"
 
 msgid "No Badges"
-msgstr "Keine Badges"
+msgstr "Keine Plaketten"
 
 msgid "thumbnail badge"
-msgstr "Miniaturbild-Badge"
+msgstr "Miniaturbild-Plakette"
 
 msgid "No Thumbnail Badge"
-msgstr "Kein Miniaturbild-Badge"
+msgstr "Keine Miniaturbild-Plakette"
 
 msgid "No Thumbnail Badges"
-msgstr "Keine Miniaturbildbadges"
+msgstr "Keine Miniaturbildplaketten"
 
 #, python-format
 msgid "Delegations: %s"
@@ -3809,7 +3809,7 @@ msgid "Treatment"
 msgstr "Treatment"
 
 msgid "Source Badges"
-msgstr "Quell-Badges"
+msgstr "Quell-Plaketten"
 
 msgid "Assign users"
 msgstr "Benutzer zuweisen"
@@ -3824,7 +3824,7 @@ msgid "Name:"
 msgstr "Name:"
 
 msgid "Select users to treat by their badges:"
-msgstr "Wähle dem Treatment zuzuteilende Benutzer durch ihre Badges:"
+msgstr "Wähle dem Treatment zuzuteilende Benutzer durch ihre Plaketten:"
 
 msgid "Number of variants:"
 msgstr "Anzahl der Varianten:"
@@ -3844,20 +3844,20 @@ msgstr "Sind Sie sicher, dass Sie Ihr Profil löschen wollen? Dieser Schritt kan
 
 #, python-format
 msgid "Edit Badges for %s"
-msgstr "Badges von %s bearbeiten"
+msgstr "Plaketten von %s bearbeiten"
 
 #, python-format
 msgid "Badges for %s"
-msgstr "Badges für %s"
+msgstr "Plaketten für %s"
 
 msgid "Global badges"
-msgstr "Globale Badges"
+msgstr "Globale Plaketten"
 
 msgid "Example:"
 msgstr "Beispiel:"
 
 msgid "Badges in instance"
-msgstr "Badges in der Gruppe"
+msgstr "Plaketten in der Gruppe"
 
 msgid "Topic"
 msgstr "Thema"
@@ -4158,7 +4158,7 @@ msgid "change group"
 msgstr "Gruppe ändern"
 
 msgid "User badges"
-msgstr "Nutzerbadges"
+msgstr "Nutzerplaketten"
 
 msgid "Most recent activity"
 msgstr "Letzte Aktivität"
