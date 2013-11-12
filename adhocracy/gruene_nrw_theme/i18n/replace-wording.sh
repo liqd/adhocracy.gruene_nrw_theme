@@ -5,4 +5,6 @@
 # decide manually.
 
 sed -i de/LC_MESSAGES/adhocracy.po \
+-e 's/Elternbeschluss/Elternentwurf/g' \
+-e 's/Beschlüsse/Entwürfe/g' \
 -e 's/Beschluss/Entwurf/g'
