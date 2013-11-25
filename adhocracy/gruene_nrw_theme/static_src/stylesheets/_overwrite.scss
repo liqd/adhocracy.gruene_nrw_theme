@@ -297,6 +297,9 @@ header + * {
 #nav ul.children li.current a {
     color: $primary-color;
 }
+#nav .children .children {
+    display: none !important;
+}
 
 #flash_message {
     border-top: 1px solid $dark-green;
