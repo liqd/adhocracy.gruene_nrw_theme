@@ -15,7 +15,8 @@ body {
 }
 #main .page_wrapper {
     background-color: #fff;
-    padding: 23px 0 23px 23px;
+    padding-top: 1.8em;
+    padding-bottom: 1.8em;
 
     #col1_content {
         padding: 0;
@@ -33,31 +34,31 @@ body {
     }
 
     // reset
-    .footer_content {
+    .footer_line > div {
         border: none;
         padding: 0 2em;
 
         h3 {
             color: inherit;
         }
-    }
 
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            &:hover {
+            a {
                 text-decoration: none;
-                color: lighten($footer-fg, 10%);
+                color: inherit;
+                &:hover {
+                    text-decoration: none;
+                    color: lighten($footer-fg, 10%);
+                }
             }
-        }
-        > li {
-            padding: 0.4em 0;
-            border-bottom: 1px solid;
+            > li {
+                padding: 0.4em 0;
+                border-bottom: 1px solid;
+            }
         }
     }
 }
@@ -272,6 +273,8 @@ header + * {
 }
 
 #nav {
+    padding-top: 1em;
+
     #user_menu {
         border-left-color: $dark-green;
     }
@@ -292,6 +295,9 @@ header + * {
             }
         }
     }
+}
+body.logged_in #nav {
+    padding-top: 0.6em;
 }
 #nav ul.children li a:hover,
 #nav ul.children li.current a {
@@ -345,6 +351,8 @@ header + * {
 
     input#s, input.q {
         height: 36px;
+        padding-top: 0;
+        padding-bottom: 0;
         padding-right: 52px;
         margin: 0;
         @include border-radius(0);
@@ -373,7 +381,7 @@ header + * {
     }
 }
 
-#col3_content {
+#sidebar {
     background: none;
     padding: 0;
 
@@ -429,6 +437,11 @@ header + * {
 #subheader {
     max-height: none;
     margin-bottom: 2em;
+    @include box-shadow(none);
+
+    .page_wrapper {
+        padding: 0;
+    }
 
     #nav_row {
         background-color: $dark-green;
@@ -481,6 +494,9 @@ header + * {
     > li {
         border-bottom-style: solid;
     }
+}
+#col3 ul.content_list.events_pager {
+    color: inherit;
 }
 
 #main .joyride-next-tip, #main .joyride-prev-tip {
@@ -568,4 +584,8 @@ ul.content_nav {
         @include text-shadow(1px 1px 2px #012b12);
         color: white;
     }
+}
+
+form {
+    background: none;
 }
